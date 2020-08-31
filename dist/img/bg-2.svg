@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.001" height="746.027" viewBox="0 0 1920.001 746.027">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.557" y1="-0.13" x2="0.443" y2="1.13" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Union_2" data-name="Union 2" d="M4807,861V115H6727V861Z" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1e4d57"/>
+      <stop offset="1" stop-color="#0b2931" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="popup-bg" transform="translate(-4806.999 -114.999)">
+    <g id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" transform="translate(0 70.002)">
+      <path id="Rectangle_1_copy_3-2" data-name="Rectangle 1 copy 3" d="M4807,45H6727V791.023H4807Z" fill="#0b2931"/>
+      <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M0,0H1920V746H0Z" transform="translate(4807 45.024)" opacity="0.2" fill="url(#linear-gradient)" style="mix-blend-mode: soft-light;isolation: isolate"/>
+    </g>
+    <g id="Clip" clip-path="url(#clip-path)">
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="1013.5" cy="1013.5" r="1013.5" transform="translate(5072 -521)" fill="url(#radial-gradient)"/>
+      <g id="logo-bg" transform="translate(5552.05 12.3)" opacity="0.15">
+        <path id="Path_11" data-name="Path 11" d="M410.7,96.3,84.792,214.5a23.778,23.778,0,0,0,0,44.759l296.53,107a104.653,104.653,0,0,0,68.538,0l296.53-107a23.778,23.778,0,0,0,0-44.759L420.487,96.3a11.889,11.889,0,0,0-9.791,0Z" transform="translate(387.034 541.82)" fill="#fff" opacity="0.2"/>
+        <path id="Path_12" data-name="Path 12" d="M604.291,52.621,52.492,252.639a23.778,23.778,0,0,0,0,44.759L574.917,486.227a104.652,104.652,0,0,0,68.538,0L1165.88,297.4a23.778,23.778,0,0,0,0-44.759L614.082,53.32A15.386,15.386,0,0,0,604.291,52.621Z" transform="translate(193.439 283.378)" fill="#fff" opacity="0.15"/>
+        <path id="Path_13" data-name="Path 13" d="M772.553,10.1,18.638,282.847a21.107,21.107,0,0,0,0,39.864L772.553,595.463a90.848,90.848,0,0,0,60.845,0l753.915-272.752a21.107,21.107,0,0,0,0-39.864L833.4,10.1a90.847,90.847,0,0,0-60.845,0Z" transform="translate(0 0)" fill="#fff" opacity="0.1"/>
+      </g>
+    </g>
+  </g>
+</svg>

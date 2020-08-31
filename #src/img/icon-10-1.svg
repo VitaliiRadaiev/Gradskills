@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73" height="13" viewBox="0 0 73 13">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="73" height="13" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="stars" transform="translate(-464 -560)">
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(464 560)" clip-path="url(#clip-path)">
+      <g transform="translate(-464 -560)">
+        <path id="Path_4596" data-name="Path 4596" d="M7,.5,9,4.8l4.5.7L10.2,8.8l.8,4.7L7,11.3,3,13.5l.8-4.7L.5,5.5,5,4.8Z" transform="translate(463.5 559.5)" fill="#31b781"/>
+      </g>
+      <g transform="translate(-449 -560)">
+        <path id="Path_4596-2" data-name="Path 4596" d="M7,.5,9,4.8l4.5.7L10.2,8.8l.8,4.7L7,11.3,3,13.5l.8-4.7L.5,5.5,5,4.8Z" transform="translate(463.5 559.5)" fill="#31b781"/>
+      </g>
+      <g transform="translate(-434 -560)">
+        <path id="Path_4596-3" data-name="Path 4596" d="M7,.5,9,4.8l4.5.7L10.2,8.8l.8,4.7L7,11.3,3,13.5l.8-4.7L.5,5.5,5,4.8Z" transform="translate(463.5 559.5)" fill="#31b781"/>
+      </g>
+      <g transform="translate(-419 -560)">
+        <path id="Path_4596-4" data-name="Path 4596" d="M7,.5,9,4.8l4.5.7L10.2,8.8l.8,4.7L7,11.3,3,13.5l.8-4.7L.5,5.5,5,4.8Z" transform="translate(463.5 559.5)" fill="#31b781"/>
+      </g>
+      <g transform="translate(-404 -560)">
+        <path id="Path_4596-5" data-name="Path 4596" d="M7,.5,9,4.8l4.5.7L10.2,8.8l.8,4.7L7,11.3,3,13.5l.8-4.7L.5,5.5,5,4.8Z" transform="translate(463.5 559.5)" fill="#31b781"/>
+      </g>
+    </g>
+  </g>
+</svg>
