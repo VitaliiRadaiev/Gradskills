@@ -19,6 +19,7 @@
 		& .top-menu {
 			text-align: right;
 			margin: 0 13px 0 auto;
+			box-shadow: 0 18px 21px -23px #b2b2b2;
 
 			@media (min-width: $md3+px) {
 				display: block !important;
@@ -165,6 +166,187 @@
 					line-height: 48px !important;
 				}
 
+				&:nth-child(odd) {
+					& .accordion {
+						
+					}
+				}
+
+				&:nth-child(even) {
+					& .accordion {
+						justify-content: flex-end;
+
+						@media (max-width: $md3+px) {
+							justify-content: flex-start;
+						}
+					}
+				}
+
+				& .accordion {
+					display: flex;
+					width: 100%;
+					order: 2;
+
+					.accordion-panel {
+						padding-left: 26px;
+
+						@media (max-width: $md3+px) {
+							padding-left: 0;
+						}
+					}
+
+					& .inner {
+						position: relative;
+						padding-left: 60px;
+
+						@media (max-width: $md3+px) {
+							padding-left: 45px;
+						}
+
+						&:before {
+							position: absolute;
+							content: url(../img/idea-icon.png);
+							top: 0;
+							left: 0;
+						}
+
+						& > .title {
+							color: #31b781;
+							font-size: 20px;
+							font-weight: 700;
+							margin-bottom: 9px;
+							margin-right: 40px;
+							font-family: 'Merriweather', sans-serif;
+
+							@media (max-width: $md3+px) {
+								font-size: 16px;
+								line-height: 18px;
+							}
+						}
+
+						& > .subtitle {
+							color: #6a797d;
+							font-family: "Open Sans";
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 27px;
+
+							@media (max-width: $md3+px) {
+								font-size: 14px;
+								line-height: 24px;
+							}
+						}
+					}
+
+					& .list {
+						display: flex;
+						flex-wrap: wrap; 
+						padding-top: 23px;
+
+
+						@media (max-width: $md3+px) {
+							display: block;
+						}
+
+						& > li {
+							width: 50%;
+							padding-right: 36px;
+							position: relative;
+							padding-left: 30px;
+							margin-bottom: 16px;
+
+							@media (max-width: $md3+px) {
+								width: 100%;
+								padding-right: 0px;
+							}
+
+							&:before {
+								position: absolute;
+								content: url(../img/check.png);
+								top: 0;
+								left: 0;
+							}
+						}
+
+						& h4 {
+							margin: 0 0 7px;
+							color: #081f25;
+							font-family: 'Merriweather', sans-serif;
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 24px;
+						}
+
+						p {
+							color: #6a797d;
+							font-family: "Open Sans";
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 24px;
+						}
+					}
+				}
+
+				& .accordion-thumb {
+					color: #31b781;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 24px;
+					margin-right: 20px;
+
+				}
+
+
+				& .accordion-item {
+					max-width: 462px;
+					width: 100%;
+					padding: 10px 25px 10px 20px;
+
+					@media (max-width: $md3+px) {
+						max-width: none;
+					}
+
+					&:after {
+						display: none;
+					}
+
+					& .plus {
+						position: absolute;
+						right: 15px;
+						top: 14px;
+						transition: all .3s ease;
+					}
+
+					&.is-active {
+						max-width: 100%;
+						padding-bottom: 20px;
+
+						& .accordion-thumb {
+							opacity: 0;
+							margin-bottom: 6px;
+						}
+
+						& .plus {
+
+							&:after {
+								display: none;
+							}
+
+							@media (min-width: 768px) {
+								top: 40px;
+								right: 35px;
+								&:after {
+									display: none;
+								}
+
+								&:before {
+									height: 3px;
+								}
+							}
+						}
+					}
+				}
+
 				&-1 {
 
 					& figure {
@@ -180,152 +362,6 @@
 					}
 
 
-					& .accordion {
-						width: 100%;
-						margin-top: 3px;
-
-						@media (max-width: $md3+px) {
-							order: 2;
-						}
-
-						& .inner {
-							position: relative;
-							padding-left: 60px;
-
-							@media (max-width: $md3+px) {
-								padding-left: 45px;
-							}
-
-							&:before {
-								position: absolute;
-								content: url(../img/idea-icon.png);
-								top: 0;
-								left: 0;
-							}
-
-							& > .title {
-								color: #31b781;
-								font-size: 20px;
-								font-weight: 700;
-								margin-bottom: 7px;
-								margin-right: 40px;
-
-								@media (max-width: $md3+px) {
-									font-size: 16px;
-									line-height: 18px;
-								}
-							}
-
-							& > .subtitle {
-								color: #6a797d;
-								font-family: "Open Sans";
-								font-size: 16px;
-								font-weight: 400;
-								line-height: 27px;
-
-								@media (max-width: $md3+px) {
-									font-size: 14px;
-									line-height: 24px;
-								}
-							}
-						}
-
-						& .accordion-panel {
-							display: flex;
-							flex-wrap: wrap; 
-							padding-top: 4px;
-
-
-							@media (max-width: $md3+px) {
-								display: block;
-							}
-
-							& > li {
-								width: 50%;
-								padding-right: 36px;
-								position: relative;
-								padding-left: 30px;
-								margin-bottom: 16px;
-
-								@media (max-width: $md3+px) {
-									width: 100%;
-									padding-right: 0px;
-								}
-
-								&:before {
-									position: absolute;
-									content: url(../img/check.png);
-									top: 0;
-									left: 0;
-								}
-							}
-
-							& h4 {
-								margin: 0 0 7px;
-								color: #081f25;
-								font-family: 'Merriweather', sans-serif;
-								font-size: 16px;
-								font-weight: 400;
-								line-height: 24px;
-							}
-
-							p {
-								color: #6a797d;
-								font-family: "Open Sans";
-								font-size: 14px;
-								font-weight: 400;
-								line-height: 24px;
-							}
-						}
-					}
-
-					& .accordion-item {
-						padding: 38px 26px 38px 47px;
-
-						@media (max-width: $md3+px) {
-							padding: 38px 20px 38px 20px;
-						}
-
-						@media (max-width: $md4+px) {
-							padding: 30px 10px 30px;
-						}
-
-
-						&.is-active {
-							padding: 38px 26px 21px 47px;
-
-							@media (max-width: $md3+px) {
-								padding: 38px 20px 21px 20px;
-							}
-
-							@media (max-width: $md4+px) {
-								padding: 30px 10px 21px;
-							}
-
-							box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
-						}
-					}
-
-					& .accordion-item:after {
-						border: none;
-						content: '+';
-						top: 32px !important;
-						right: 30px;
-
-						@media (max-width: $md4+px) {
-							right: 8px;
-						}
-					}
-
-					& .accordion-item.is-active:after {
-						top: 70px !important;
-						right: 33px;
-					    content: url(../img/icon-7.png);
-
-					    @media (max-width: $md4+px) {
-					    	right: 13px;
-					    }
-					}
 				}
 
 				&-2 {
@@ -346,38 +382,6 @@
 						padding-left: 2px;
 					}
 
-					& .accordion {
-						margin-top: 31px;
-					}
-
-					& .accordion-thumb {
-						color: #31b781;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 24px;
-						margin-right: 20px;
-					}
-
-					& .accordion-item {
-						 padding: 10px 25px 10px 20px;
-						&:after {
-							display: none;
-						}
-
-						& .plus {
-							position: absolute;
-							right: 15px;
-							top: 14px;
-						}
-
-						&.is-active {
-							& .plus {
-								&:after {
-									display: none;
-								}
-							}
-						}
-					}
 				}
 
 				&-3 {
@@ -395,37 +399,9 @@
 					}
 
 					& .accordion {
-						margin-top: 31px;
+						margin-top: 8px;
 					}
 
-					& .accordion-thumb {
-						color: #31b781;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 24px;
-						margin-right: 20px;
-					}
-
-					& .accordion-item {
-						 padding: 10px 25px 10px 20px;
-						&:after {
-							display: none;
-						}
-
-						& .plus {
-							position: absolute;
-							right: 15px;
-							top: 14px;
-						}
-
-						&.is-active {
-							& .plus {
-								&:after {
-									display: none;
-								}
-							}
-						}
-					}
 				}
 
 				&-4 {
@@ -445,37 +421,9 @@
 					}
 
 					& .accordion {
-						margin-top: 31px;
+						margin-top: 10px;
 					}
 
-					& .accordion-thumb {
-						color: #31b781;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 24px;
-						margin-right: 20px;
-					}
-
-					& .accordion-item {
-						 padding: 10px 25px 10px 20px;
-						&:after {
-							display: none;
-						}
-
-						& .plus {
-							position: absolute;
-							right: 15px;
-							top: 14px;
-						}
-
-						&.is-active {
-							& .plus {
-								&:after {
-									display: none;
-								}
-							}
-						}
-					}
 				}
 			}
 		}
@@ -660,7 +608,7 @@
 .page-how-works-student {
 	& .finding-internships {
 		margin: 0;
-		padding-bottom: 17px;
+		padding-bottom: 20px;
 		& h2 {
 			margin-bottom: 86px;
 		}
@@ -687,6 +635,192 @@
 					line-height: 48px !important;
 				}
 
+				& .number {
+					margin-bottom: 8px !important;
+					line-height: 48px !important;
+				}
+
+				&:nth-child(odd) {
+					& .accordion {
+						
+					}
+				}
+
+				&:nth-child(even) {
+					& .accordion {
+						justify-content: flex-end;
+
+						@media (max-width: $md3+px) {
+							justify-content: flex-start;
+						}
+					}
+				}
+
+				& .accordion {
+					display: flex;
+					width: 100%;
+					order: 2;
+
+					.accordion-panel {
+						padding-left: 26px;
+
+						@media (max-width: $md3+px) {
+							padding-left: 0;
+						}
+					}
+
+					& .inner {
+						position: relative;
+						padding-left: 60px;
+
+						@media (max-width: $md3+px) {
+							padding-left: 45px;
+						}
+
+						&:before {
+							position: absolute;
+							content: url(../img/idea-icon.png);
+							top: 0;
+							left: 0;
+						}
+
+						& > .title {
+							color: #31b781;
+							font-size: 20px;
+							font-weight: 700;
+							margin-bottom: 9px;
+							margin-right: 40px;
+							font-family: 'Merriweather', sans-serif;
+
+							@media (max-width: $md3+px) {
+								font-size: 16px;
+								line-height: 18px;
+							}
+						}
+
+						& > .subtitle {
+							color: #6a797d;
+							font-family: "Open Sans";
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 27px;
+
+							@media (max-width: $md3+px) {
+								font-size: 14px;
+								line-height: 24px;
+							}
+						}
+					}
+
+					& .list {
+						display: flex;
+						flex-wrap: wrap; 
+						padding-top: 23px;
+
+
+						@media (max-width: $md3+px) {
+							display: block;
+						}
+
+						& > li {
+							width: 50%;
+							padding-right: 36px;
+							position: relative;
+							padding-left: 30px;
+							margin-bottom: 16px;
+
+							@media (max-width: $md3+px) {
+								width: 100%;
+								padding-right: 0px;
+							}
+
+							&:before {
+								position: absolute;
+								content: url(../img/check.png);
+								top: 0;
+								left: 0;
+							}
+						}
+
+						& h4 {
+							margin: 0 0 7px;
+							color: #081f25;
+							font-family: 'Merriweather', sans-serif;
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 24px;
+						}
+
+						p {
+							color: #6a797d;
+							font-family: "Open Sans";
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 24px;
+						}
+					}
+				}
+
+				& .accordion-thumb {
+					color: #31b781;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 24px;
+					margin-right: 20px;
+
+				}
+
+
+				& .accordion-item {
+					max-width: 462px;
+					width: 100%;
+					padding: 10px 25px 10px 20px;
+
+					@media (max-width: $md3+px) {
+						max-width: none;
+					}
+
+					&:after {
+						display: none;
+					}
+
+					& .plus {
+						position: absolute;
+						right: 15px;
+						top: 14px;
+						transition: all .3s ease;
+					}
+
+					&.is-active {
+						max-width: 100%;
+						padding-bottom: 20px;
+
+						& .accordion-thumb {
+							opacity: 0;
+							margin-bottom: 6px;
+						}
+
+						& .plus {
+
+							&:after {
+								display: none;
+							}
+
+							@media (min-width: 768px) {
+								top: 40px;
+								right: 35px;
+								&:after {
+									display: none;
+								}
+
+								&:before {
+									height: 3px;
+								}
+							}
+						}
+					}
+				}
+
 				&-1 {
 
 					& figure {
@@ -702,152 +836,6 @@
 					}
 
 
-					& .accordion {
-						width: 100%;
-						margin-top: 3px;
-
-						@media (max-width: $md3+px) {
-							order: 2;
-						}
-
-						& .inner {
-							position: relative;
-							padding-left: 60px;
-
-							@media (max-width: $md3+px) {
-								padding-left: 45px;
-							}
-
-							&:before {
-								position: absolute;
-								content: url(../img/idea-icon.png);
-								top: 0;
-								left: 0;
-							}
-
-							& > .title {
-								color: #31b781;
-								font-size: 20px;
-								font-weight: 700;
-								margin-bottom: 7px;
-								margin-right: 40px;
-
-								@media (max-width: $md3+px) {
-									font-size: 16px;
-									line-height: 18px;
-								}
-							}
-
-							& > .subtitle {
-								color: #6a797d;
-								font-family: "Open Sans";
-								font-size: 16px;
-								font-weight: 400;
-								line-height: 27px;
-
-								@media (max-width: $md3+px) {
-									font-size: 14px;
-									line-height: 24px;
-								}
-							}
-						}
-
-						& .accordion-panel {
-							display: flex;
-							flex-wrap: wrap; 
-							padding-top: 4px;
-
-
-							@media (max-width: $md3+px) {
-								display: block;
-							}
-
-							& > li {
-								width: 50%;
-								padding-right: 36px;
-								position: relative;
-								padding-left: 30px;
-								margin-bottom: 16px;
-
-								@media (max-width: $md3+px) {
-									width: 100%;
-									padding-right: 0px;
-								}
-
-								&:before {
-									position: absolute;
-									content: url(../img/check.png);
-									top: 0;
-									left: 0;
-								}
-							}
-
-							& h4 {
-								margin: 0 0 7px;
-								color: #081f25;
-								font-family: 'Merriweather', sans-serif;
-								font-size: 16px;
-								font-weight: 400;
-								line-height: 24px;
-							}
-
-							p {
-								color: #6a797d;
-								font-family: "Open Sans";
-								font-size: 14px;
-								font-weight: 400;
-								line-height: 24px;
-							}
-						}
-					}
-
-					& .accordion-item {
-						padding: 38px 26px 38px 47px;
-
-						@media (max-width: $md3+px) {
-							padding: 38px 20px 38px 20px;
-						}
-
-						@media (max-width: $md4+px) {
-							padding: 30px 10px 30px;
-						}
-
-
-						&.is-active {
-							padding: 38px 26px 21px 47px;
-
-							@media (max-width: $md3+px) {
-								padding: 38px 20px 21px 20px;
-							}
-
-							@media (max-width: $md4+px) {
-								padding: 30px 10px 21px;
-							}
-
-							box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
-						}
-					}
-
-					& .accordion-item:after {
-						border: none;
-						content: '+';
-						top: 32px !important;
-						right: 30px;
-
-						@media (max-width: $md4+px) {
-							right: 8px;
-						}
-					}
-
-					& .accordion-item.is-active:after {
-						top: 70px !important;
-						right: 33px;
-					    content: url(../img/icon-7.png);
-
-					    @media (max-width: $md4+px) {
-					    	right: 13px;
-					    }
-					}
 				}
 
 				&-2 {
@@ -869,37 +857,9 @@
 					}
 
 					& .accordion {
-						margin-top: 31px;
+						margin-top: 9px;
 					}
 
-					& .accordion-thumb {
-						color: #31b781;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 24px;
-						margin-right: 20px;
-					}
-
-					& .accordion-item {
-						 padding: 10px 25px 10px 20px;
-						&:after {
-							display: none;
-						}
-
-						& .plus {
-							position: absolute;
-							right: 15px;
-							top: 14px;
-						}
-
-						&.is-active {
-							& .plus {
-								&:after {
-									display: none;
-								}
-							}
-						}
-					}
 				}
 
 				&-3 {
@@ -923,37 +883,9 @@
 					}
 
 					& .accordion {
-						margin-top: 31px;
+						margin-top: 10px;
 					}
 
-					& .accordion-thumb {
-						color: #31b781;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 24px;
-						margin-right: 20px;
-					}
-
-					& .accordion-item {
-						 padding: 10px 25px 10px 20px;
-						&:after {
-							display: none;
-						}
-
-						& .plus {
-							position: absolute;
-							right: 15px;
-							top: 14px;
-						}
-
-						&.is-active {
-							& .plus {
-								&:after {
-									display: none;
-								}
-							}
-						}
-					}
 				}
 
 				&-4 {
@@ -973,37 +905,9 @@
 					}
 
 					& .accordion {
-						margin-top: 31px;
+						margin-top: 10px;
 					}
 
-					& .accordion-thumb {
-						color: #31b781;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 24px;
-						margin-right: 20px;
-					}
-
-					& .accordion-item {
-						 padding: 10px 25px 10px 20px;
-						&:after {
-							display: none;
-						}
-
-						& .plus {
-							position: absolute;
-							right: 15px;
-							top: 14px;
-						}
-
-						&.is-active {
-							& .plus {
-								&:after {
-									display: none;
-								}
-							}
-						}
-					}
 				}
 			}
 		}
@@ -1966,6 +1870,27 @@
 
 		& .content {
 			margin-bottom: 75px;
+			flex-wrap: nowrap;
+
+			@media (max-width: 1280px) {
+				margin-left: -10px;
+				margin-right: -10px;
+
+				& .item {
+					padding: 49px 6px 15px;
+					width: 24.6%;
+				}
+			}
+
+			@media (max-width: $md2+px) { 
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+
+				& .item {
+					margin-bottom: 30px;
+				}
+
+			}
 
 			@media (max-width: $md4+px) {
 				margin-bottom: 40px;
@@ -1973,6 +1898,8 @@
 
 			& .item {
 				padding: 49px 20px 15px;
+				max-width: 271px;
+				min-width: 236px;
 
 				@media (max-width: 568px) {
 					width: 100%;

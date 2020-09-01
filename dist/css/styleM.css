@@ -91,6 +91,8 @@
 .page-1 .top-line .top-menu {
   text-align: right;
   margin: 0 13px 0 auto;
+  -webkit-box-shadow: 0 18px 21px -23px #b2b2b2;
+          box-shadow: 0 18px 21px -23px #b2b2b2;
 }
 
 .page-how-works-business .top-line .top-menu li:not(:last-child),
@@ -150,6 +152,137 @@
   line-height: 48px !important;
 }
 
+.page-how-works-business .finding-internships .content .item:nth-child(even) .accordion {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .accordion-panel {
+  padding-left: 26px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .inner {
+  position: relative;
+  padding-left: 60px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .inner:before {
+  position: absolute;
+  content: url(../img/idea-icon.png);
+  top: 0;
+  left: 0;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .inner > .title {
+  color: #31b781;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  margin-right: 40px;
+  font-family: 'Merriweather', sans-serif;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .inner > .subtitle {
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 23px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .list > li {
+  width: 50%;
+  padding-right: 36px;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .list > li:before {
+  position: absolute;
+  content: url(../img/check.png);
+  top: 0;
+  left: 0;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .list h4 {
+  margin: 0 0 7px;
+  color: #081f25;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion .list p {
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion-thumb {
+  color: #31b781;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion-item {
+  max-width: 462px;
+  width: 100%;
+  padding: 10px 25px 10px 20px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion-item:after {
+  display: none;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion-item .plus {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion-item.is-active {
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion-item.is-active .accordion-thumb {
+  opacity: 0;
+  margin-bottom: 6px;
+}
+
+.page-how-works-business .finding-internships .content .item .accordion-item.is-active .plus:after {
+  display: none;
+}
+
 .page-how-works-business .finding-internships .content .item-1 {
   margin-bottom: 170px;
 }
@@ -163,103 +296,6 @@
   content: url(../img/arrow-1.png);
   top: 103%;
   left: 23%;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion {
-  width: 100%;
-  margin-top: 3px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .inner {
-  position: relative;
-  padding-left: 60px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .inner:before {
-  position: absolute;
-  content: url(../img/idea-icon.png);
-  top: 0;
-  left: 0;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .inner > .title {
-  color: #31b781;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 7px;
-  margin-right: 40px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .inner > .subtitle {
-  color: #6a797d;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .accordion-panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 4px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .accordion-panel > li {
-  width: 50%;
-  padding-right: 36px;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 16px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .accordion-panel > li:before {
-  position: absolute;
-  content: url(../img/check.png);
-  top: 0;
-  left: 0;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .accordion-panel h4 {
-  margin: 0 0 7px;
-  color: #081f25;
-  font-family: 'Merriweather', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion .accordion-panel p {
-  color: #6a797d;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion-item {
-  padding: 38px 26px 38px 47px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion-item.is-active {
-  padding: 38px 26px 21px 47px;
-  -webkit-box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion-item:after {
-  border: none;
-  content: '+';
-  top: 32px !important;
-  right: 30px;
-}
-
-.page-how-works-business .finding-internships .content .item-1 .accordion-item.is-active:after {
-  top: 70px !important;
-  right: 33px;
-  content: url(../img/icon-7.png);
 }
 
 .page-how-works-business .finding-internships .content .item-2 {
@@ -281,36 +317,6 @@
   padding-left: 2px;
 }
 
-.page-how-works-business .finding-internships .content .item-2 .accordion {
-  margin-top: 31px;
-}
-
-.page-how-works-business .finding-internships .content .item-2 .accordion-thumb {
-  color: #31b781;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-right: 20px;
-}
-
-.page-how-works-business .finding-internships .content .item-2 .accordion-item {
-  padding: 10px 25px 10px 20px;
-}
-
-.page-how-works-business .finding-internships .content .item-2 .accordion-item:after {
-  display: none;
-}
-
-.page-how-works-business .finding-internships .content .item-2 .accordion-item .plus {
-  position: absolute;
-  right: 15px;
-  top: 14px;
-}
-
-.page-how-works-business .finding-internships .content .item-2 .accordion-item.is-active .plus:after {
-  display: none;
-}
-
 .page-how-works-business .finding-internships .content .item-3 {
   margin-bottom: 201px;
 }
@@ -326,33 +332,7 @@
 }
 
 .page-how-works-business .finding-internships .content .item-3 .accordion {
-  margin-top: 31px;
-}
-
-.page-how-works-business .finding-internships .content .item-3 .accordion-thumb {
-  color: #31b781;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-right: 20px;
-}
-
-.page-how-works-business .finding-internships .content .item-3 .accordion-item {
-  padding: 10px 25px 10px 20px;
-}
-
-.page-how-works-business .finding-internships .content .item-3 .accordion-item:after {
-  display: none;
-}
-
-.page-how-works-business .finding-internships .content .item-3 .accordion-item .plus {
-  position: absolute;
-  right: 15px;
-  top: 14px;
-}
-
-.page-how-works-business .finding-internships .content .item-3 .accordion-item.is-active .plus:after {
-  display: none;
+  margin-top: 8px;
 }
 
 .page-how-works-business .finding-internships .content .item-4 .text-wrap {
@@ -366,33 +346,7 @@
 }
 
 .page-how-works-business .finding-internships .content .item-4 .accordion {
-  margin-top: 31px;
-}
-
-.page-how-works-business .finding-internships .content .item-4 .accordion-thumb {
-  color: #31b781;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-right: 20px;
-}
-
-.page-how-works-business .finding-internships .content .item-4 .accordion-item {
-  padding: 10px 25px 10px 20px;
-}
-
-.page-how-works-business .finding-internships .content .item-4 .accordion-item:after {
-  display: none;
-}
-
-.page-how-works-business .finding-internships .content .item-4 .accordion-item .plus {
-  position: absolute;
-  right: 15px;
-  top: 14px;
-}
-
-.page-how-works-business .finding-internships .content .item-4 .accordion-item.is-active .plus:after {
-  display: none;
+  margin-top: 10px;
 }
 
 .page-how-works-business .launching-soon:after {
@@ -524,7 +478,7 @@
 
 .page-how-works-student .finding-internships {
   margin: 0;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 }
 
 .page-how-works-student .finding-internships h2 {
@@ -542,6 +496,142 @@
   line-height: 48px !important;
 }
 
+.page-how-works-student .finding-internships .content .item .number {
+  margin-bottom: 8px !important;
+  line-height: 48px !important;
+}
+
+.page-how-works-student .finding-internships .content .item:nth-child(even) .accordion {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .accordion-panel {
+  padding-left: 26px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .inner {
+  position: relative;
+  padding-left: 60px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .inner:before {
+  position: absolute;
+  content: url(../img/idea-icon.png);
+  top: 0;
+  left: 0;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .inner > .title {
+  color: #31b781;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  margin-right: 40px;
+  font-family: 'Merriweather', sans-serif;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .inner > .subtitle {
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 23px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .list > li {
+  width: 50%;
+  padding-right: 36px;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .list > li:before {
+  position: absolute;
+  content: url(../img/check.png);
+  top: 0;
+  left: 0;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .list h4 {
+  margin: 0 0 7px;
+  color: #081f25;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion .list p {
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion-thumb {
+  color: #31b781;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion-item {
+  max-width: 462px;
+  width: 100%;
+  padding: 10px 25px 10px 20px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion-item:after {
+  display: none;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion-item .plus {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion-item.is-active {
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion-item.is-active .accordion-thumb {
+  opacity: 0;
+  margin-bottom: 6px;
+}
+
+.page-how-works-student .finding-internships .content .item .accordion-item.is-active .plus:after {
+  display: none;
+}
+
 .page-how-works-student .finding-internships .content .item-1 {
   margin-bottom: 167px;
 }
@@ -555,103 +645,6 @@
   content: url(../img/arrow-1.png);
   top: 103%;
   left: 23%;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion {
-  width: 100%;
-  margin-top: 3px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .inner {
-  position: relative;
-  padding-left: 60px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .inner:before {
-  position: absolute;
-  content: url(../img/idea-icon.png);
-  top: 0;
-  left: 0;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .inner > .title {
-  color: #31b781;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 7px;
-  margin-right: 40px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .inner > .subtitle {
-  color: #6a797d;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .accordion-panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 4px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .accordion-panel > li {
-  width: 50%;
-  padding-right: 36px;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 16px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .accordion-panel > li:before {
-  position: absolute;
-  content: url(../img/check.png);
-  top: 0;
-  left: 0;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .accordion-panel h4 {
-  margin: 0 0 7px;
-  color: #081f25;
-  font-family: 'Merriweather', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion .accordion-panel p {
-  color: #6a797d;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion-item {
-  padding: 38px 26px 38px 47px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion-item.is-active {
-  padding: 38px 26px 21px 47px;
-  -webkit-box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion-item:after {
-  border: none;
-  content: '+';
-  top: 32px !important;
-  right: 30px;
-}
-
-.page-how-works-student .finding-internships .content .item-1 .accordion-item.is-active:after {
-  top: 70px !important;
-  right: 33px;
-  content: url(../img/icon-7.png);
 }
 
 .page-how-works-student .finding-internships .content .item-2 {
@@ -674,33 +667,7 @@
 }
 
 .page-how-works-student .finding-internships .content .item-2 .accordion {
-  margin-top: 31px;
-}
-
-.page-how-works-student .finding-internships .content .item-2 .accordion-thumb {
-  color: #31b781;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-right: 20px;
-}
-
-.page-how-works-student .finding-internships .content .item-2 .accordion-item {
-  padding: 10px 25px 10px 20px;
-}
-
-.page-how-works-student .finding-internships .content .item-2 .accordion-item:after {
-  display: none;
-}
-
-.page-how-works-student .finding-internships .content .item-2 .accordion-item .plus {
-  position: absolute;
-  right: 15px;
-  top: 14px;
-}
-
-.page-how-works-student .finding-internships .content .item-2 .accordion-item.is-active .plus:after {
-  display: none;
+  margin-top: 9px;
 }
 
 .page-how-works-student .finding-internships .content .item-3 {
@@ -720,33 +687,7 @@
 }
 
 .page-how-works-student .finding-internships .content .item-3 .accordion {
-  margin-top: 31px;
-}
-
-.page-how-works-student .finding-internships .content .item-3 .accordion-thumb {
-  color: #31b781;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-right: 20px;
-}
-
-.page-how-works-student .finding-internships .content .item-3 .accordion-item {
-  padding: 10px 25px 10px 20px;
-}
-
-.page-how-works-student .finding-internships .content .item-3 .accordion-item:after {
-  display: none;
-}
-
-.page-how-works-student .finding-internships .content .item-3 .accordion-item .plus {
-  position: absolute;
-  right: 15px;
-  top: 14px;
-}
-
-.page-how-works-student .finding-internships .content .item-3 .accordion-item.is-active .plus:after {
-  display: none;
+  margin-top: 10px;
 }
 
 .page-how-works-student .finding-internships .content .item-4 .text-wrap {
@@ -760,33 +701,7 @@
 }
 
 .page-how-works-student .finding-internships .content .item-4 .accordion {
-  margin-top: 31px;
-}
-
-.page-how-works-student .finding-internships .content .item-4 .accordion-thumb {
-  color: #31b781;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-right: 20px;
-}
-
-.page-how-works-student .finding-internships .content .item-4 .accordion-item {
-  padding: 10px 25px 10px 20px;
-}
-
-.page-how-works-student .finding-internships .content .item-4 .accordion-item:after {
-  display: none;
-}
-
-.page-how-works-student .finding-internships .content .item-4 .accordion-item .plus {
-  position: absolute;
-  right: 15px;
-  top: 14px;
-}
-
-.page-how-works-student .finding-internships .content .item-4 .accordion-item.is-active .plus:after {
-  display: none;
+  margin-top: 10px;
 }
 
 .page-how-works-student .launching-soon {
@@ -1505,10 +1420,14 @@
 
 .page-1 .profiles .content {
   margin-bottom: 75px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .page-1 .profiles .content .item {
   padding: 49px 20px 15px;
+  max-width: 271px;
+  min-width: 236px;
 }
 
 .page-1 .profiles .content .item figure {
@@ -1706,6 +1625,32 @@
     display: none;
   }
 
+  .page-how-works-business .finding-internships .content .item .accordion-item.is-active .plus {
+    top: 40px;
+    right: 35px;
+  }
+
+  .page-how-works-business .finding-internships .content .item .accordion-item.is-active .plus:after {
+    display: none;
+  }
+
+  .page-how-works-business .finding-internships .content .item .accordion-item.is-active .plus:before {
+    height: 3px;
+  }
+
+  .page-how-works-student .finding-internships .content .item .accordion-item.is-active .plus {
+    top: 40px;
+    right: 35px;
+  }
+
+  .page-how-works-student .finding-internships .content .item .accordion-item.is-active .plus:after {
+    display: none;
+  }
+
+  .page-how-works-student .finding-internships .content .item .accordion-item.is-active .plus:before {
+    height: 3px;
+  }
+
   .page-how-works-business header .mobile-photo {
     display: none;
   }
@@ -1763,6 +1708,18 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .page-1 .profiles .content {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .page-1 .profiles .content .item {
+    padding: 49px 6px 15px;
+    width: 24.6%;
+  }
+}
+
 @media (max-width: 991.98px) {
   .page-how-works-business .finding-internships .content .item-4 figure {
     right: 0;
@@ -1784,6 +1741,18 @@
   .page-how-works-student header .content {
     background: url(../img/student-hero-bg.jpg) no-repeat 79% center;
     background-size: cover;
+  }
+
+  .page-1 .profiles .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .page-1 .profiles .content .item {
+    margin-bottom: 30px;
   }
 
   .why-gradskills .content .column_1 {
@@ -1872,41 +1841,41 @@
     width: 100%;
   }
 
-  .page-how-works-business .finding-internships .content .item-1 .accordion {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .page-how-works-business .finding-internships .content .item:nth-child(even) .accordion {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
-  .page-how-works-business .finding-internships .content .item-1 .accordion .inner {
+  .page-how-works-business .finding-internships .content .item .accordion .accordion-panel {
+    padding-left: 0;
+  }
+
+  .page-how-works-business .finding-internships .content .item .accordion .inner {
     padding-left: 45px;
   }
 
-  .page-how-works-business .finding-internships .content .item-1 .accordion .inner > .title {
+  .page-how-works-business .finding-internships .content .item .accordion .inner > .title {
     font-size: 16px;
     line-height: 18px;
   }
 
-  .page-how-works-business .finding-internships .content .item-1 .accordion .inner > .subtitle {
+  .page-how-works-business .finding-internships .content .item .accordion .inner > .subtitle {
     font-size: 14px;
     line-height: 24px;
   }
 
-  .page-how-works-business .finding-internships .content .item-1 .accordion .accordion-panel {
+  .page-how-works-business .finding-internships .content .item .accordion .list {
     display: block;
   }
 
-  .page-how-works-business .finding-internships .content .item-1 .accordion .accordion-panel > li {
+  .page-how-works-business .finding-internships .content .item .accordion .list > li {
     width: 100%;
     padding-right: 0px;
   }
 
-  .page-how-works-business .finding-internships .content .item-1 .accordion-item {
-    padding: 38px 20px 38px 20px;
-  }
-
-  .page-how-works-business .finding-internships .content .item-1 .accordion-item.is-active {
-    padding: 38px 20px 21px 20px;
+  .page-how-works-business .finding-internships .content .item .accordion-item {
+    max-width: none;
   }
 
   .page-how-works-business .get-started .subtitle {
@@ -1931,41 +1900,41 @@
     width: 100%;
   }
 
-  .page-how-works-student .finding-internships .content .item-1 .accordion {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .page-how-works-student .finding-internships .content .item:nth-child(even) .accordion {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
-  .page-how-works-student .finding-internships .content .item-1 .accordion .inner {
+  .page-how-works-student .finding-internships .content .item .accordion .accordion-panel {
+    padding-left: 0;
+  }
+
+  .page-how-works-student .finding-internships .content .item .accordion .inner {
     padding-left: 45px;
   }
 
-  .page-how-works-student .finding-internships .content .item-1 .accordion .inner > .title {
+  .page-how-works-student .finding-internships .content .item .accordion .inner > .title {
     font-size: 16px;
     line-height: 18px;
   }
 
-  .page-how-works-student .finding-internships .content .item-1 .accordion .inner > .subtitle {
+  .page-how-works-student .finding-internships .content .item .accordion .inner > .subtitle {
     font-size: 14px;
     line-height: 24px;
   }
 
-  .page-how-works-student .finding-internships .content .item-1 .accordion .accordion-panel {
+  .page-how-works-student .finding-internships .content .item .accordion .list {
     display: block;
   }
 
-  .page-how-works-student .finding-internships .content .item-1 .accordion .accordion-panel > li {
+  .page-how-works-student .finding-internships .content .item .accordion .list > li {
     width: 100%;
     padding-right: 0px;
   }
 
-  .page-how-works-student .finding-internships .content .item-1 .accordion-item {
-    padding: 38px 20px 38px 20px;
-  }
-
-  .page-how-works-student .finding-internships .content .item-1 .accordion-item.is-active {
-    padding: 38px 20px 21px 20px;
+  .page-how-works-student .finding-internships .content .item .accordion-item {
+    max-width: none;
   }
 
   .page-how-works-student .get-started .subtitle {
@@ -2076,40 +2045,8 @@
 }
 
 @media (max-width: 479.98px) {
-  .page-how-works-business .finding-internships .content .item-1 .accordion-item {
-    padding: 30px 10px 30px;
-  }
-
-  .page-how-works-business .finding-internships .content .item-1 .accordion-item.is-active {
-    padding: 30px 10px 21px;
-  }
-
-  .page-how-works-business .finding-internships .content .item-1 .accordion-item:after {
-    right: 8px;
-  }
-
-  .page-how-works-business .finding-internships .content .item-1 .accordion-item.is-active:after {
-    right: 13px;
-  }
-
   .page-how-works-business .faq {
     margin-bottom: 50px;
-  }
-
-  .page-how-works-student .finding-internships .content .item-1 .accordion-item {
-    padding: 30px 10px 30px;
-  }
-
-  .page-how-works-student .finding-internships .content .item-1 .accordion-item.is-active {
-    padding: 30px 10px 21px;
-  }
-
-  .page-how-works-student .finding-internships .content .item-1 .accordion-item:after {
-    right: 8px;
-  }
-
-  .page-how-works-student .finding-internships .content .item-1 .accordion-item.is-active:after {
-    right: 13px;
   }
 
   .page-how-works-student .faq {
