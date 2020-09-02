@@ -230,7 +230,7 @@ header .content {
       width: 50%;
       background: url("../img/bg-2.svg") no-repeat center;
       background-size: cover;
-      padding: 140px 60px 40px 40px; }
+      padding: 140px 25px 40px 40px; }
       .popup-site .content .right h2 {
         color: #fff;
         margin-bottom: 50px; }
@@ -247,7 +247,7 @@ header .content {
           color: #2eac79; }
         .popup-site .content .right ul li:before {
           position: absolute;
-          top: 5px;
+          top: 10px;
           left: 0;
           width: 4px;
           height: 4px;
