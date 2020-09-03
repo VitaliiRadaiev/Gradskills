@@ -45,5 +45,23 @@ $(document).ready(function() {
 
 	}
 
+	{
+		let btn = document.querySelector('.top-line .btn-wrap');
+
+		if(btn) {
+			btn.addEventListener('click', (e) => {
+				e.preventDefault();
+
+				$('.top-line .btn-wrap .collapse').slideToggle(400);
+			});
+
+			document.body.addEventListener('click', (e) => {
+				if(!e.target.closest('.top-line .btn-wrap')) {
+					$('.top-line .btn-wrap .collapse').slideUp(400);
+				}
+			})
+		}
+	}
+
 });
 

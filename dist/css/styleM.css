@@ -87,6 +87,13 @@
 	}*/
 }
 
+.page-how-works-business .top-line,
+.page-how-works-student .top-line,
+.page-1 .top-line,
+.page-about .top-line {
+  overflow: visible;
+}
+
 .page-how-works-business .top-line .top-menu,
 .page-how-works-student .top-line .top-menu,
 .page-1 .top-line .top-menu,
@@ -130,6 +137,30 @@
 .page-1 .top-line .content-width .btn-wrap,
 .page-about .top-line .content-width .btn-wrap {
   width: 135px;
+}
+
+.page-how-works-business .top-line .content-width .btn-wrap .collapse,
+.page-how-works-student .top-line .content-width .btn-wrap .collapse,
+.page-1 .top-line .content-width .btn-wrap .collapse,
+.page-about .top-line .content-width .btn-wrap .collapse {
+  display: none;
+  position: absolute;
+  top: 125%;
+  right: 0;
+  width: 179px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 2px 20px -10px black;
+          box-shadow: 0px 2px 20px -10px black;
+  z-index: 10;
+}
+
+.page-how-works-business .top-line .content-width .btn-wrap .collapse > a,
+.page-how-works-student .top-line .content-width .btn-wrap .collapse > a,
+.page-1 .top-line .content-width .btn-wrap .collapse > a,
+.page-about .top-line .content-width .btn-wrap .collapse > a {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .top-line-burger {
@@ -698,14 +729,6 @@
 
 .page-how-works-student .finding-internships .content .item-3 .accordion .list li {
   width: 33.3333%;
-}
-
-.page-how-works-student .finding-internships .content .item-3 .accordion .list li:nth-child(2):before {
-  content: url(../img/idia-black-small.png);
-}
-
-.page-how-works-student .finding-internships .content .item-3 .accordion .list li:nth-child(3):before {
-  content: url(../img/3-line.png);
 }
 
 .page-how-works-student .finding-internships .content .item-4 .text-wrap {
@@ -1493,9 +1516,10 @@
 }
 
 .page-1 .use-gradskills {
-  margin-bottom: 170px;
+  margin-bottom: 0px;
   background: #f6f8fb;
   padding-top: 90px;
+  padding-bottom: 170px;
 }
 
 .page-1 .how-it-works ul {
@@ -2054,6 +2078,10 @@
     margin-bottom: 100px;
   }
 
+  .page-1 .stat-info:after {
+    bottom: -50px;
+  }
+
   .page-1 .stat-info ul {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -2069,11 +2097,12 @@
   }
 
   .page-1 .profiles {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   .page-1 .use-gradskills {
-    margin-bottom: 70px;
+    padding-bottom: 140px;
+    padding-top: 50px;
   }
 }
 
