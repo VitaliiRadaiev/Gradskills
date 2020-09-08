@@ -1279,7 +1279,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 0 110px;
+  margin: 0 0 50px;
 }
 
 .fees2 ul li {
@@ -1765,7 +1765,7 @@
 
 .page-about .contact-us.fees2 {
   text-align: center;
-  margin-bottom: 172px;
+  margin-bottom: 50px;
 }
 
 .page-about .contact-us.fees2 h2 {
@@ -1823,6 +1823,10 @@
 
 .page-about .contact-us .bottom-wrap.dots-wrap img {
   width: 141px;
+}
+
+.page-about .dots .dots-wrap {
+  padding: 102px 0 242px;
 }
 
 .page-about footer {
@@ -2449,6 +2453,7 @@
 
   .page-about .contact-us.fees2 {
     margin-bottom: 100px;
+    padding-bottom: 1px;
   }
 
   .page-about .contact-us.fees2 ul {
@@ -2471,6 +2476,10 @@
 
   .page-about .contact-us .bottom-wrap {
     padding: 30px 0;
+  }
+
+  .page-about .dots .dots-wrap {
+    padding: 102px 0 200px;
   }
 }
 
@@ -2735,6 +2744,10 @@
 
   .page-about .contact-us.fees2 {
     margin-bottom: 40px;
+  }
+
+  .page-about .dots .dots-wrap {
+    padding: 100px 0;
   }
 }
 

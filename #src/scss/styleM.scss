@@ -1751,7 +1751,7 @@
   ul{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 110px;
+    margin: 0 0 50px;
 
     @media (max-width: $md4+px) {
     	margin-bottom: 50px;
@@ -2595,6 +2595,8 @@ footer {
 
 // ========= about ============================================== 
 .page-about {
+
+
 	& header {
 		& .content  {
 			background: url(../img/about-bg.png) no-repeat center;
@@ -2683,10 +2685,11 @@ footer {
 
 		&.fees2 {
 			text-align: center;
-			margin-bottom: 172px;
+			margin-bottom: 50px;
 
 			@media (max-width: $md3+px) {
 				margin-bottom: 100px;
+				padding-bottom: 1px;
 			}
 
 			@media (max-width: $md4+px) {
@@ -2767,6 +2770,20 @@ footer {
 				& img {
 					width: 141px;
 				}
+			}
+		}
+	}
+
+	& .dots {
+		& .dots-wrap {
+			padding: 102px 0 242px;
+
+			@media (max-width: $md3+px) {
+				padding: 102px 0 200px;
+			}
+
+			@media (max-width: $md4+px) {
+				padding: 100px 0;
 			}
 		}
 	}
