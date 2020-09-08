@@ -386,6 +386,10 @@
   margin-top: 10px;
 }
 
+.page-how-works-business .launching-soon {
+  margin-top: -56px;
+}
+
 .page-how-works-business .launching-soon:after {
   content: url(../img/bg-5.02.png);
 }
@@ -401,6 +405,11 @@
   color: #31b781;
 }
 
+.page-how-works-business .launching-soon ul li {
+  width: 100%;
+  max-width: 222px;
+}
+
 .page-how-works-business .get-started {
   padding-bottom: 108px;
 }
@@ -413,7 +422,6 @@
   font-weight: 300;
   line-height: 60px;
   margin-top: 32px;
-  margin-bottom: 10px;
 }
 
 .page-how-works-business .get-started .subtitle {
@@ -496,7 +504,7 @@
 
 .page-how-works-business .get-started .bottom-wrap .subtitle {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 35px;
   letter-spacing: -0.4px;
   margin-bottom: 25px;
 }
@@ -754,7 +762,12 @@
 }
 
 .page-how-works-student .launching-soon h2 {
-  margin-top: 51px;
+  margin-top: 3px;
+}
+
+.page-how-works-student .launching-soon ul li {
+  width: 100%;
+  max-width: 222px;
 }
 
 .page-how-works-student .get-started {
@@ -795,7 +808,7 @@
           box-shadow: 0 5px 27px 1px rgba(12, 26, 55, 0.12);
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 30px 20px 47px;
+  padding: 30px 20px 22px;
   text-align: center;
   width: 32%;
 }
@@ -852,7 +865,7 @@
 
 .page-how-works-student .get-started .bottom-wrap .subtitle {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 35px;
   letter-spacing: -0.4px;
   margin-bottom: 25px;
 }
@@ -1435,6 +1448,15 @@
   margin-bottom: 33px;
 }
 
+.page-1 header .content .bottom h2 {
+  font-size: 20px !important;
+  line-height: 31px !important;
+}
+
+.page-1 header .content .bottom h2 span {
+  font-size: 24px !important;
+}
+
 .page-1 .info-business {
   margin-bottom: 105px;
 }
@@ -1469,8 +1491,8 @@
 }
 
 .page-1 .profiles .content .item {
-  padding: 49px 20px 15px;
-  max-width: 271px;
+  padding: 30px 20px 15px;
+  max-width: 300px;
   min-width: 266px;
 }
 
@@ -1481,6 +1503,10 @@
 .page-1 .profiles .content .item h3 {
   margin-top: 2px;
   margin-bottom: 6px;
+}
+
+.page-1 .profiles .content .item p {
+  margin-bottom: 3px;
 }
 
 .page-1 .profiles .content .item p > span {
@@ -1526,12 +1552,34 @@
   margin: 0 0 108px;
 }
 
+.page-1 .launching-soon .content-width .dots-wrap {
+  margin-top: 14px;
+}
+
+.page-1 .launching-soon .content-width .mobile-photo img {
+  display: block;
+  margin: 0 auto;
+}
+
 .page-1 .faq {
   margin-bottom: 149px;
 }
 
+.faq {
+  margin-bottom: 130px;
+}
+
+.dots .dots-wrap {
+  text-align: center;
+  padding: 200px 0;
+}
+
+.dots .dots-wrap img {
+  width: 141px;
+}
+
 .why-gradskills {
-  margin: 0 0 93px;
+  margin: 0 0 0px;
   font-family: 'Merriweather', sans-serif;
 }
 
@@ -1659,6 +1707,129 @@
   padding-left: 19px;
 }
 
+.page-about header .content {
+  background: url(../img/about-bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.page-about header .content h1 {
+  margin-bottom: 33px;
+}
+
+.page-about header .content p {
+  margin-bottom: 53px;
+}
+
+.page-about header .content .dots-wrap img {
+  width: 141px;
+}
+
+.page-about header .content .content-width {
+  display: block;
+  text-align: center;
+  padding: 122px 0 130px;
+}
+
+.page-about header .content figure {
+  margin-bottom: 0;
+  top: 0;
+}
+
+.page-about .about {
+  padding: 104px 0 50px;
+  margin-bottom: 135px;
+}
+
+.page-about .about .colour {
+  color: #31b781;
+}
+
+.page-about .about h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.page-about .about h2 {
+  margin: 39px 0 20px;
+  font-weight: 300;
+}
+
+.page-about .about p {
+  font-family: 'Merriweather',sans-serif;
+  color: #6a797d;
+  font-size: 18px;
+  line-height: 33px;
+  max-width: 1041px;
+  margin: 0 0 23px;
+}
+
+.page-about .contact-us.fees2 {
+  text-align: center;
+  margin-bottom: 172px;
+}
+
+.page-about .contact-us.fees2 h2 {
+  margin-top: 7px;
+}
+
+.page-about .contact-us.fees2 ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-about .contact-us.fees2 ul li {
+  min-width: 340px;
+  padding: 25px 15px 47px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-about .contact-us.fees2 ul li figure {
+  margin-bottom: 52px;
+}
+
+.page-about .contact-us.fees2 ul li h5 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.page-about .contact-us.fees2 ul li a {
+  color: #31b781;
+  font-family: Merriweather,sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+  border: none;
+}
+
+.page-about .contact-us.fees2 ul li p a:hover {
+  color: #081f25;
+}
+
+.page-about .contact-us .bottom-wrap {
+  padding: 72px 0;
+}
+
+.page-about .contact-us .bottom-wrap.dots-wrap img {
+  width: 141px;
+}
+
+.page-about footer {
+  background: url(../img/about-footer.png) no-repeat top center;
+  background-size: cover;
+}
+
 @media (min-width: 767.98px) {
   .page-how-works-business .top-line .top-menu,
   .page-how-works-student .top-line .top-menu,
@@ -1704,6 +1875,14 @@
   }
 
   .page-how-works-student header .mobile-photo {
+    display: none;
+  }
+
+  .page-1 .launching-soon .content-width .dots-wrap {
+    display: none;
+  }
+
+  .page-1 .launching-soon .content-width .mobile-photo {
     display: none;
   }
 }
@@ -1962,6 +2141,10 @@
     max-width: none;
   }
 
+  .page-how-works-business .get-started {
+    padding-bottom: 150px;
+  }
+
   .page-how-works-business .get-started .subtitle {
     font-size: 32px;
     margin-bottom: 30px;
@@ -1969,6 +2152,10 @@
 
   .page-how-works-business .get-started .content ul li {
     width: 100%;
+  }
+
+  .page-how-works-business .get-started .content ul li .text-wrap h4 {
+    min-height: auto;
   }
 
   .page-how-works-student .finding-internships .content .item {
@@ -2021,6 +2208,10 @@
     max-width: none;
   }
 
+  .page-how-works-student .get-started {
+    padding-bottom: 150px;
+  }
+
   .page-how-works-student .get-started .subtitle {
     font-size: 32px;
     margin-bottom: 30px;
@@ -2028,6 +2219,10 @@
 
   .page-how-works-student .get-started .content ul li {
     width: 100%;
+  }
+
+  .page-how-works-student .get-started .content ul li .text-wrap h4 {
+    min-height: auto;
   }
 
   .page-how-works-student footer .content-width .right {
@@ -2068,10 +2263,36 @@
     margin: 0 auto 42px;
   }
 
+  .fees2 {
+    background: #0e3039;
+  }
+
   .fees2 ul li {
     width: 100%;
     margin-bottom: 30px;
     margin-right: 0;
+  }
+
+  .page-1 header .content .content-width {
+    width: 85%;
+    padding: 88px 0 100px;
+  }
+
+  .page-1 .info-business {
+    margin: -56px 0 50px;
+  }
+
+  .page-1 .info-business .content-width {
+    padding: 40px 30px;
+    width: 85%;
+  }
+
+  .page-1 .info-business .content-width ul li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .page-1 .info-business .content-width ul li:last-child {
+    margin-bottom: 0;
   }
 
   .page-1 .stat-info {
@@ -2093,7 +2314,19 @@
   }
 
   .page-1 .stat-info ul li:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 65px;
+  }
+
+  .page-1 .stat-info ul li h3 {
+    font-size: 60px;
+  }
+
+  .page-1 .stat-info ul li h6 {
+    font-size: 22px;
+  }
+
+  .page-1 .profiles h2 {
+    line-height: 45px !important;
   }
 
   .page-1 .profiles {
@@ -2101,8 +2334,149 @@
   }
 
   .page-1 .use-gradskills {
-    padding-bottom: 140px;
+    padding-bottom: 50px;
     padding-top: 50px;
+  }
+
+  .page-1 .use-gradskills .content-width h2 {
+    line-height: 45px !important;
+  }
+
+  .page-1 .how-it-works {
+    padding: 50px 0 25px;
+    margin-bottom: 90px;
+  }
+
+  .page-1 .how-it-works:after {
+    background: url(../img/bg-3.jpg) 50% no-repeat;
+    background-size: cover;
+    top: 0px;
+    height: 100%;
+  }
+
+  .page-1 .how-it-works h2 {
+    line-height: 45px !important;
+    margin-bottom: 50px;
+  }
+
+  .page-1 .how-it-works ul {
+    margin-bottom: 0px;
+  }
+
+  .page-1 .how-it-works ul li a {
+    font-size: 14px;
+    border: none;
+  }
+
+  .page-1 .launching-soon .content-width h2 {
+    margin: 22px 0 5px;
+    font-size: 24px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  .page-1 .launching-soon .content-width p {
+    margin-bottom: 21px;
+  }
+
+  .page-1 .launching-soon .content-width .big-btn-default {
+    margin-bottom: 42px;
+  }
+
+  .page-1 .launching-soon .content-width ul {
+    margin-bottom: 36px;
+  }
+
+  .page-1 .launching-soon .content-width ul li {
+    width: auto;
+    max-width: 300px;
+  }
+
+  .faq .accordion .accordion-thumb {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .faq .accordion .accordion-item p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  footer .content-width h2 {
+    line-height: 45px !important;
+  }
+
+  .dots .dots-wrap {
+    padding: 100px 0;
+  }
+
+  .why-gradskills .content-width .suptitle {
+    font-weight: 700;
+  }
+
+  .why-gradskills .content-width h2 {
+    line-height: 45px !important;
+    margin-bottom: 50px;
+  }
+
+  .why-gradskills .content .column_2 {
+    width: 100%;
+    padding: 60px 15px 10px;
+  }
+
+  .page-about header .content p {
+    font-size: 18px;
+  }
+
+  .page-about .about {
+    padding: 15px 0 0px;
+  }
+
+  .page-about .about h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .page-about .about h2 {
+    margin: 30px 0 15px;
+  }
+
+  .page-about .about p {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0 0 16px;
+  }
+
+  .page-about .contact-us.fees2 {
+    margin-bottom: 100px;
+  }
+
+  .page-about .contact-us.fees2 ul {
+    display: block;
+  }
+
+  .page-about .contact-us.fees2 ul li {
+    min-width: auto;
+    padding: 25px 15px 30px;
+  }
+
+  .page-about .contact-us.fees2 ul li h5 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .page-about .contact-us.fees2 ul li a {
+    font-size: 18px;
+  }
+
+  .page-about .contact-us .bottom-wrap {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-1 .launching-soon {
+    padding-bottom: 0;
   }
 }
 
@@ -2122,6 +2496,16 @@
     width: 100%;
   }
 
+  .page-1 .how-it-works ul {
+    display: block;
+  }
+
+  .page-1 .how-it-works ul li {
+    width: 100%;
+    max-width: 266px;
+    margin: 0 auto 25px !important;
+  }
+
   .why-gradskills .content .column_2 ul li:nth-child(2n) {
     padding: 0;
   }
@@ -2131,6 +2515,11 @@
     text-align: center;
     padding: 0;
     margin-bottom: 50px;
+  }
+
+  .why-gradskills .content .column_2 ul p {
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 
@@ -2146,8 +2535,44 @@
 }
 
 @media (max-width: 479.98px) {
+  .page-how-works-business .finding-internships h2 {
+    margin-bottom: 40px;
+  }
+
+  .page-how-works-business .finding-internships .content .item {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .page-how-works-business .finding-internships .content .item figure {
+    max-width: 200px;
+  }
+
+  .page-how-works-business .finding-internships .content .item figure img {
+    width: 100%;
+  }
+
   .page-how-works-business .faq {
     margin-bottom: 50px;
+  }
+
+  .page-how-works-student .finding-internships h2 {
+    margin-bottom: 40px;
+  }
+
+  .page-how-works-student .finding-internships .content .item {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .page-how-works-student .finding-internships .content .item figure {
+    max-width: 200px;
+  }
+
+  .page-how-works-student .finding-internships .content .item figure img {
+    width: 100%;
   }
 
   .page-how-works-student .faq {
@@ -2177,6 +2602,10 @@
 
   .page-how-works-business header .content .bottom-btn-wrap a {
     font-size: 14px;
+  }
+
+  .page-how-works-business header .bottom-menu {
+    min-height: 45px;
   }
 
   .page-how-works-business header .bottom-menu {
@@ -2220,6 +2649,10 @@
   }
 
   .page-how-works-student header .bottom-menu {
+    min-height: 45px;
+  }
+
+  .page-how-works-student header .bottom-menu {
     max-width: 332px;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -2242,28 +2675,66 @@
     margin-bottom: 50px;
   }
 
+  .page-1 header .content h1 {
+    margin-bottom: 15px;
+  }
+
+  .page-1 header .content p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  .page-1 header .content .bottom a {
+    margin: 0 auto;
+  }
+
+  .page-1 header .content .bottom h2 {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+
+  .page-1 header .content .bottom h2 span {
+    font-size: 20px !important;
+  }
+
   .page-1 .profiles .content {
     margin-bottom: 40px;
   }
 
-  .page-1 .how-it-works {
-    margin-bottom: 50px;
+  .page-1 .launching-soon .content-width p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 21px;
   }
 
-  .page-1 .how-it-works ul {
-    margin-bottom: 50px;
+  .page-1 .launching-soon .content-width .btn-wrap {
+    text-align: center;
+  }
+
+  .page-1 .launching-soon .content-width ul {
+    margin-bottom: 36px;
+  }
+
+  .page-1 .launching-soon .content-width ul li {
+    width: auto;
+    max-width: 300px;
   }
 
   .page-1 .faq {
     margin-bottom: 50px;
   }
 
-  .why-gradskills {
+  .faq {
     margin-bottom: 50px;
   }
 
   .why-gradskills .content-width h2 {
     margin-bottom: 30px;
+  }
+
+  .page-about .contact-us.fees2 {
+    margin-bottom: 40px;
   }
 }
 
