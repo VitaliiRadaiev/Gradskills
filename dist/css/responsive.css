@@ -106,6 +106,8 @@
   .get-started .content ul li .text-wrap h4 {
     min-height: 60px; } }
 @media (max-width: 767px) {
+  .content-width {
+    width: 85%; }
   header .content h1 {
     font-size: 40px; }
 
@@ -259,6 +261,8 @@
   .about h1 {
     font-size: 40px; } }
 @media (max-width: 568px) {
+  .content-width {
+    width: 85%; }
   header .content .bottom h2 {
     width: 100%;
     margin-top: 20px; }
@@ -354,6 +358,8 @@
 
   header .content .btn-wrap .btn-default {
     width: 100%;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; } 
+
+  }
 
 /*# sourceMappingURL=responsive.css.map */

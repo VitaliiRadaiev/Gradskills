@@ -13,8 +13,15 @@
 		    padding: 10px 31px;
 		}
 
-		@media (max-width: 370px){
-		    padding: 10px;
+		@media (max-width: 380px){
+		    padding: 10px 0;
+
+		    & .content-width {
+
+		    	& .logo {
+		    		width: 100px;
+		    	}
+		    }
 		}
 
 		& .top-menu {
@@ -91,6 +98,10 @@
 						line-height: 30px;
 						padding: 0 10px;
 					}
+				}
+
+				@media (max-width: 568px){
+				  	width: 115px;
 				}
 
 				& .collapse {
@@ -361,6 +372,10 @@
 						& .accordion-thumb {
 							opacity: 0;
 							margin-bottom: 6px;
+
+							@media (max-width: $md4+px) {
+								line-height: 6px;
+							}
 						}
 
 						& .plus {
@@ -472,11 +487,16 @@
 
 	& .launching-soon {
 
-				margin-top: -56px;
+		margin-top: -56px;
 
 		&:after {
 			content: url(../img/bg-5.02.png);
 		}
+
+		@media (max-width: 568px) {
+			padding: 30px 0;
+		}
+
 
 		& h2 {
 			font-weight: 300;
@@ -869,6 +889,10 @@
 						& .accordion-thumb {
 							opacity: 0;
 							margin-bottom: 6px;
+
+							@media (max-width: $md4+px) {
+								line-height: 6px;
+							}
 						}
 
 						& .plus {
@@ -994,6 +1018,10 @@
 	& .launching-soon { 
 
 		margin-top: -56px;
+
+		@media (max-width: 568px) {
+			padding: 30px 0;
+		}
 
 		&:after {
 			content: url(../img/bg-5.01.png);
@@ -1315,6 +1343,10 @@
 					position: relative;
 					top: 0;
 
+					@media (max-width: $md4+px) {
+						padding: 10px 8px;
+					}
+
 
 					@media (min-width: 992px) {
 						&:hover {
@@ -1576,6 +1608,10 @@
 					transition: all .2s ease;
 					position: relative;
 					top: 0;
+
+					@media (max-width: $md4+px) {
+						padding: 10px 8px;
+					}
 
 
 					@media (min-width: 992px) {
@@ -1912,13 +1948,39 @@
 .page-1 {
 	& header {
 		& .content {
+
+			@media (max-width: $md3+px) {
+				background: #10323a;
+			}
 			& .content-width {
 				    padding: 88px 0 176px;
+
+				    @media (max-width: 1024px) {
+				    	& figure {
+				    		padding: 50px 0 30px;
+				    	}
+				    }
 
 				    @media (max-width: $md3+px) {
 				    	width: 85%; 
 				    	padding: 88px 0 100px;
 				    }
+
+				    @media (max-width: 576px) {
+				    	padding: 50px 0 65px;
+
+				    	& figure {
+				    		padding: 30px 0;
+				    	}
+				    }
+
+				    & .text-wrap {
+				    		order: 0;
+				    	@media (max-width: 576px) {
+
+				    	}
+				    }
+
 			}
 
 			& h1 {
@@ -1957,6 +2019,9 @@
 					@media (max-width: $md4+px) {
 						font-size: 16px !important;
 						line-height: 26px !important;
+						width: 80%;
+						margin: 20px auto 0;
+						text-align: center;
 						& span {
 							font-size: 20px !important;
 						}
@@ -1968,9 +2033,21 @@
 
 	& .info-business {
 		margin-bottom: 105px;
+		position: relative;
 
 		@media (max-width: $md3+px) {
-			margin: -56px 0 50px;
+			margin: -64px 0 50px;
+
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 50%;
+				background-color: #10323a;
+				z-index: -1;
+			}
 
 			& .content-width {
 				padding: 40px 30px;
@@ -2206,8 +2283,8 @@
 
 	& .how-it-works {
 		@media (max-width: $md3+px) {
-			padding: 50px 0 25px;
-			margin-bottom: 90px;
+			padding: 50px 0 65px;
+			margin-bottom: 50px;
 			&:after {
 				 background: url(../img/bg-3.jpg)50% no-repeat;
 				 background-size: cover;
@@ -2258,6 +2335,10 @@
 		@media (max-width: 767px){
 			padding-bottom: 0;
 		}
+
+		@media (max-width: 568px){
+			padding: 30px 0px 0;
+		}
 		& .content-width {
 
 			& .dots-wrap {
@@ -2307,8 +2388,8 @@
 				}
 
 				& .btn-wrap {
-					text-align: center;
-
+					display: flex;
+					justify-content: center;
 				}
 
 				& ul {
@@ -2439,10 +2520,6 @@ footer {
 			@media (max-width: $md3+px) {
 				line-height: 45px !important;
 				margin-bottom: 50px;
-			}
-
-			@media (max-width: $md4+px) {
-				margin-bottom: 30px;
 			}
 
 			& > span {
