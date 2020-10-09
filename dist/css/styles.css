@@ -129,9 +129,12 @@ input, textarea, button {
   background: url("../img/bg-btn.svg") no-repeat;
   display: inline-block;
   width: 266px;
-  border: none !important; }
+  border: none !important; 
+  position: relative;
+  transition: all .4s ease;
+  top: 0;}
   .big-btn-default:hover {
-    margin-top: -2px; }
+    top: -2px; }
 
 header .content {
   background: url("../img/bg-1.png") no-repeat center bottom;
@@ -222,6 +225,27 @@ header .content {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+
+    .popup-site .wpcf7-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; 
+    }
+
+    .popup-site .content .popup-form .big-btn-default {
+      color: #fff;
+      font-size: 17px;
+      line-height: 60px;
+      width: 266px;
+      height: auto;
+      cursor: pointer;
+    } 
+
     .popup-site .content .left {
       background: #fff;
       width: 50%;
@@ -591,6 +615,7 @@ p.top {
       line-height: normal;
       margin: 0 0 30px; }
     .popup-info .content p {
+      word-break: break-word;
       font-weight: 400;
       font-family: 'Merriweather', sans-serif;
       font-size: 18px;
@@ -659,6 +684,7 @@ p.top {
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
+    max-width: 700px;
     margin: 0 0 13px; }
   .launching-soon p {
     color: #bbc5ce;
@@ -667,11 +693,12 @@ p.top {
     font-weight: 400;
     line-height: 33px;
     margin: 0 0 34px;
-    padding-right: 120px; }
+    padding-right: 170px; }
   .launching-soon .big-btn-default {
     margin: 0 0 32px; }
   .launching-soon .content {
-    width: 700px; }
+    max-width: 760px;
+    width: 100%; }
   .launching-soon ul li {
     display: inline-block;
     padding-left: 22px;

@@ -70,10 +70,131 @@
           transform: scale(0) !important;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?3zzlpp");
+  src: url("../fonts/icomoon.eot?3zzlpp#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3zzlpp") format("truetype"), url("../fonts/icomoon.woff?3zzlpp") format("woff"), url("../fonts/icomoon.svg?3zzlpp#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e907";
+}
+
+.icon-arrow-up:before {
+  content: "\e908";
+}
+
+.icon-social-twitter:before {
+  content: "\e901";
+}
+
+.icon-keyboard_arrow_down:before {
+  content: "\e902";
+}
+
+.icon-arrow-thin-up:before {
+  content: "\e903";
+}
+
+.icon-arrow-thin-down:before {
+  content: "\e904";
+}
+
+.icon-arrow-right:before {
+  content: "\e905";
+}
+
+.icon-arrow-left:before {
+  content: "\e906";
+}
+
+.icon-check:before {
+  content: "\e909";
+}
+
+.icon-facebook-with-circle:before {
+  content: "\e900";
+}
+
+.icon-youtube:before {
+  content: "\e90a";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+.icon-play3:before {
+  content: "\ea1c";
+}
+
+.icon-pause2:before {
+  content: "\ea1d";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.stars-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stars-list > li {
+  line-height: 14px;
+}
+
+.stars-list > li:not(last-child) {
+  margin-right: 2px;
+}
+
+.stars-list .icon-star-full {
+  color: #31b781;
+}
+
+.stars-list .icon-star-empty {
+  color: #cccccc;
+}
+
 .page-how-works-business,
 .page-how-works-student,
 .page-1,
-.page-about {
+.page-about,
+.error404,
+.page-create-account {
   /*	& .finding-internships {
 		& .content {
 			& .item {
@@ -90,14 +211,18 @@
 .page-how-works-business .top-line,
 .page-how-works-student .top-line,
 .page-1 .top-line,
-.page-about .top-line {
+.page-about .top-line,
+.error404 .top-line,
+.page-create-account .top-line {
   overflow: visible;
 }
 
 .page-how-works-business .top-line .top-menu,
 .page-how-works-student .top-line .top-menu,
 .page-1 .top-line .top-menu,
-.page-about .top-line .top-menu {
+.page-about .top-line .top-menu,
+.error404 .top-line .top-menu,
+.page-create-account .top-line .top-menu {
   text-align: right;
   margin: 0 13px 0 auto;
   -webkit-box-shadow: 0 18px 21px -23px #b2b2b2;
@@ -107,14 +232,18 @@
 .page-how-works-business .top-line .top-menu li:not(:last-child),
 .page-how-works-student .top-line .top-menu li:not(:last-child),
 .page-1 .top-line .top-menu li:not(:last-child),
-.page-about .top-line .top-menu li:not(:last-child) {
+.page-about .top-line .top-menu li:not(:last-child),
+.error404 .top-line .top-menu li:not(:last-child),
+.page-create-account .top-line .top-menu li:not(:last-child) {
   margin-right: 43px;
 }
 
 .page-how-works-business .top-line .top-menu li.active > a,
 .page-how-works-student .top-line .top-menu li.active > a,
 .page-1 .top-line .top-menu li.active > a,
-.page-about .top-line .top-menu li.active > a {
+.page-about .top-line .top-menu li.active > a,
+.error404 .top-line .top-menu li.active > a,
+.page-create-account .top-line .top-menu li.active > a {
   color: #31b781;
   font-weight: 700;
 }
@@ -122,7 +251,9 @@
 .page-how-works-business .top-line .top-menu a,
 .page-how-works-student .top-line .top-menu a,
 .page-1 .top-line .top-menu a,
-.page-about .top-line .top-menu a {
+.page-about .top-line .top-menu a,
+.error404 .top-line .top-menu a,
+.page-create-account .top-line .top-menu a {
   font-family: 'Merriweather', sans-serif;
   color: #6a797d;
   font-size: 14px;
@@ -135,14 +266,27 @@
 .page-how-works-business .top-line .content-width .btn-wrap,
 .page-how-works-student .top-line .content-width .btn-wrap,
 .page-1 .top-line .content-width .btn-wrap,
-.page-about .top-line .content-width .btn-wrap {
+.page-about .top-line .content-width .btn-wrap,
+.error404 .top-line .content-width .btn-wrap,
+.page-create-account .top-line .content-width .btn-wrap {
   width: 135px;
+}
+
+.page-how-works-business .top-line .content-width .btn-wrap .btn-default,
+.page-how-works-student .top-line .content-width .btn-wrap .btn-default,
+.page-1 .top-line .content-width .btn-wrap .btn-default,
+.page-about .top-line .content-width .btn-wrap .btn-default,
+.error404 .top-line .content-width .btn-wrap .btn-default,
+.page-create-account .top-line .content-width .btn-wrap .btn-default {
+  top: 0 !important;
 }
 
 .page-how-works-business .top-line .content-width .btn-wrap .collapse,
 .page-how-works-student .top-line .content-width .btn-wrap .collapse,
 .page-1 .top-line .content-width .btn-wrap .collapse,
-.page-about .top-line .content-width .btn-wrap .collapse {
+.page-about .top-line .content-width .btn-wrap .collapse,
+.error404 .top-line .content-width .btn-wrap .collapse,
+.page-create-account .top-line .content-width .btn-wrap .collapse {
   display: none;
   position: absolute;
   top: 125%;
@@ -157,7 +301,9 @@
 .page-how-works-business .top-line .content-width .btn-wrap .collapse > a,
 .page-how-works-student .top-line .content-width .btn-wrap .collapse > a,
 .page-1 .top-line .content-width .btn-wrap .collapse > a,
-.page-about .top-line .content-width .btn-wrap .collapse > a {
+.page-about .top-line .content-width .btn-wrap .collapse > a,
+.error404 .top-line .content-width .btn-wrap .collapse > a,
+.page-create-account .top-line .content-width .btn-wrap .collapse > a {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -755,10 +901,11 @@
 
 .page-how-works-student .launching-soon {
   margin-top: -56px;
+  padding-top: 90px;
 }
 
 .page-how-works-student .launching-soon:after {
-  content: url(../img/bg-5.01.png);
+  content: url(../img/bg-5.011.png);
 }
 
 .page-how-works-student .launching-soon h2 {
@@ -782,7 +929,7 @@
   font-weight: 300;
   line-height: 60px;
   margin-top: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .page-how-works-student .get-started .subtitle {
@@ -1468,6 +1615,14 @@
   position: relative;
 }
 
+.page-1 .info-business .content-width li h6 {
+  height: 37px;
+}
+
+.page-1 .info-business .content-width li h6 img {
+  height: 100%;
+}
+
 .page-1 .stat-info {
   margin-bottom: 203px;
 }
@@ -1521,7 +1676,7 @@
 }
 
 .page-1 .profiles .content .item .stars {
-  margin-bottom: 1px;
+  margin-bottom: 12px;
 }
 
 .page-1 .profiles .content .item .university {
@@ -1680,7 +1835,7 @@
 .why-gradskills .content .column_2 ul li {
   width: 50%;
   padding: 0 20px 0 29px;
-  margin-bottom: 34px;
+  margin-bottom: 60px;
 }
 
 .why-gradskills .content .column_2 ul li:nth-child(2n) {
@@ -1699,8 +1854,18 @@
   font-weight: 400;
 }
 
-.why-gradskills .content .column_2 ul h5 > b {
+.why-gradskills .content .column_2 ul h5 b {
   font-weight: 700;
+}
+
+.why-gradskills .content .column_2 ul h5 strong {
+  font-weight: 700;
+}
+
+.why-gradskills .content .column_2 ul h5 > p {
+  color: #081f25;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .why-gradskills .content .column_2 ul p {
@@ -1841,11 +2006,450 @@
   background-size: cover;
 }
 
+.error404 .not-found {
+  min-height: 53%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.page-create-account_2 .create-account-block {
+  position: relative;
+}
+
+.page-create-account_2 .create-account-block:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 63%;
+  background: url(../img/about-bg.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.page-create-account_2 .create-account-block .content-width > h1 {
+  color: #fff;
+}
+
+.page-create-account_2 .create-account-block .content-width > p {
+  color: #bbc5ce;
+}
+
+.page-create-account footer {
+  background: none;
+}
+
+.page-create-account footer .center p {
+  color: #6a797d !important;
+}
+
+.create-account-block {
+  text-align: center;
+  padding: 67px 0 50px;
+  margin-bottom: 21px;
+}
+
+.create-account-block .content {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 955px;
+}
+
+.create-account-block .content-width > h1 {
+  color: #081f25;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 18px;
+  line-height: 48px;
+}
+
+.create-account-block .content-width > p {
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 52px;
+}
+
+.create-account-block .content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -14px;
+}
+
+.create-account-block .card {
+  padding: 0 15px;
+  width: 50%;
+}
+
+.create-account-block .project-category-form {
+  margin: 58px 0 65px;
+  max-width: 952px;
+  -webkit-box-shadow: 0 20px 48px 3px rgba(12, 26, 55, 0.12);
+          box-shadow: 0 20px 48px 3px rgba(12, 26, 55, 0.12);
+  border-radius: 10px;
+  background-color: #f6f8fb;
+  text-align: center;
+  padding: 50px 30px 53px;
+}
+
+.create-account-block .project-category-form h3 {
+  color: #081f25;
+  font-family: Merriweather;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  margin-top: 8px;
+  line-height: 40px;
+}
+
+.create-account-block .project-category-form p {
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 19px;
+}
+
+.create-account-block .project-category-form__item {
+  max-width: 402px;
+  margin: 0 auto 34px;
+}
+
+.create-account-block .project-category-form__item + .project-category-form__item {
+  margin-bottom: 20px;
+}
+
+.create-account-block .project-category-form__item label {
+  display: block;
+  text-align: left;
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 33px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 2px;
+}
+
+.create-account-block .project-category-form__item .big-btn-default {
+  background-size: contain;
+  width: 244px;
+}
+
+.create-account-block .project-category-form .category-select-select-block {
+  width: 100%;
+  height: 60px;
+  -webkit-box-shadow: 0 7px 15px rgba(8, 31, 37, 0.15);
+          box-shadow: 0 7px 15px rgba(8, 31, 37, 0.15);
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: left !important;
+}
+
+.create-account-block .project-category-form .link {
+  color: #31b781;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.create-account-block .bottom {
+  margin: 50px 0 21px;
+  text-align: center;
+}
+
+.create-account-block .bottom h5 {
+  color: #081f25;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+.create-account-block .bottom ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.create-account-block .bottom ul li {
+  display: inline-block;
+  padding-left: 22px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 57px;
+  vertical-align: top;
+  color: #081f25;
+  margin-bottom: 10px;
+}
+
+.create-account-block .bottom ul li:last-child {
+  margin-right: 0;
+}
+
+.create-account-block .bottom ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url(../img/icon-6.svg);
+}
+
+.card {
+  position: relative;
+  margin-bottom: 41px;
+}
+
+.card .decor {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -21px;
+  height: 100%;
+  width: 71%;
+  z-index: -1;
+}
+
+.card .decor > img {
+  height: 100%;
+  width: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.card .card-inner {
+  height: 100%;
+}
+
+.card .card-inner:before {
+  position: absolute;
+  content: url(../img/card-decor.png);
+  top: 0;
+  right: 0px;
+}
+
+.card_1 .card-inner {
+  background-image: -o-linear-gradient(225deg, #0e3c48 0%, #0d313a 100%);
+  background-image: linear-gradient(-135deg, #0e3c48 0%, #0d313a 100%);
+}
+
+.card_1 .card-inner:after {
+  position: absolute;
+  content: url(../img/card-1-decor.png);
+  right: 0px;
+  bottom: -7px;
+}
+
+.card_2 .card-inner {
+  background-image: -o-linear-gradient(225deg, #31b781 0%, #2ea776 100%);
+  background-image: linear-gradient(-135deg, #31b781 0%, #2ea776 100%);
+}
+
+.card_2 .card-inner:after {
+  position: absolute;
+  content: url(../img/card-2-decor.png);
+  right: 0px;
+  bottom: -7px;
+}
+
+.card_2 .card-inner p {
+  color: #f1f3f5;
+}
+
+.card_2 .card-inner .big-btn-default {
+  color: #161a1f;
+  background: url(../img/bg-btn-white.svg) no-repeat;
+  background-size: contain;
+}
+
+.card-inner {
+  min-height: 220px;
+  padding: 30px;
+  -webkit-box-shadow: 0 5px 28px rgba(46, 81, 115, 0.35);
+          box-shadow: 0 5px 28px rgba(46, 81, 115, 0.35);
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-inner h3 {
+  font-family: Merriweather;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-top: -2px;
+  margin-bottom: 11px;
+  position: relative;
+  z-index: 3;
+}
+
+.card-inner h3 > span {
+  font-weight: 700;
+}
+
+.card-inner p {
+  color: #bbc5ce;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.card-inner .big-btn-default {
+  position: relative;
+  z-index: 5;
+  padding: 0 48px 0px 57px;
+  background-size: contain;
+  width: 244px;
+}
+
+.select:after {
+  display: none !important;
+}
+
+.select-block {
+  position: relative;
+}
+
+.select__label {
+  z-index: 2;
+  position: absolute;
+  top: -8px;
+  background-color: #f7f7f7;
+  padding: 0 5px;
+  color: #979797;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  left: 20px;
+}
+
+.select {
+  position: relative;
+  cursor: pointer;
+}
+
+.select .select-title {
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.select .select-title__arrow {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  width: 40px;
+  height: 100%;
+  background: url("../img/keyboard_arrow_down.png") center no-repeat;
+}
+
+.select .select-title__value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 60px;
+  display: block;
+  overflow: hidden;
+  padding: 0 33px 0 21px;
+  white-space: nowrap;
+  text-transform: none;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.select .select-options {
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  display: none;
+  overflow: hidden;
+  min-width: 100%;
+  background-color: #fff;
+  padding: 10px 20px 10px 20px;
+  -webkit-box-shadow: 0 7px 15px rgba(8, 31, 37, 0.15);
+          box-shadow: 0 7px 15px rgba(8, 31, 37, 0.15);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.select .select-options-scroll {
+  max-height: 510px;
+  overflow: auto;
+  padding: 0 0px 0 0px;
+}
+
+.select .select-options-list {
+  padding: 0px 0px 0px 0px;
+}
+
+.select .select-options__value {
+  color: #000;
+  color: #6a797d;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  min-height: 40px;
+  padding: 10px 0;
+  margin: 0px 0px 0px 0px;
+  padding-right: 20px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  padding-left: 0;
+  border-radius: 10px;
+}
+
+.select .select-options__value:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.select .select-options__value:hover {
+  color: #31b781;
+  background: rgba(49, 183, 129, 0.2);
+  padding-left: 20px;
+}
+
 @media (min-width: 767.98px) {
   .page-how-works-business .top-line .top-menu,
   .page-how-works-student .top-line .top-menu,
   .page-1 .top-line .top-menu,
-  .page-about .top-line .top-menu {
+  .page-about .top-line .top-menu,
+  .error404 .top-line .top-menu,
+  .page-create-account .top-line .top-menu {
     display: block !important;
   }
 }
@@ -1902,7 +2506,9 @@
   .page-how-works-business .top-line .top-menu a:hover,
   .page-how-works-student .top-line .top-menu a:hover,
   .page-1 .top-line .top-menu a:hover,
-  .page-about .top-line .top-menu a:hover {
+  .page-about .top-line .top-menu a:hover,
+  .error404 .top-line .top-menu a:hover,
+  .page-create-account .top-line .top-menu a:hover {
     color: #31b781;
   }
 
@@ -1973,7 +2579,21 @@
   }
 }
 
+@media (max-width: 1133px) {
+  .page-how-works-student .launching-soon .content {
+    max-width: 758px;
+  }
+}
+
 @media (max-width: 1024px) {
+  .page-how-works-business .launching-soon:after {
+    top: 26px;
+  }
+
+  .page-how-works-student .launching-soon {
+    padding-top: 75px;
+  }
+
   .page-1 header .content .content-width figure {
     padding: 50px 0 30px;
   }
@@ -1990,6 +2610,14 @@
 
   .page-how-works-student .finding-internships .content .item-4 figure {
     right: 0;
+  }
+
+  .page-how-works-student .launching-soon {
+    padding: 70px 0;
+  }
+
+  .page-how-works-student .launching-soon .dots-wrap {
+    display: none;
   }
 
   .page-how-works-business header .content {
@@ -2052,14 +2680,18 @@
   .page-how-works-business .top-line,
   .page-how-works-student .top-line,
   .page-1 .top-line,
-  .page-about .top-line {
+  .page-about .top-line,
+  .error404 .top-line,
+  .page-create-account .top-line {
     overflow: visible;
   }
 
   .page-how-works-business .top-line .top-menu,
   .page-how-works-student .top-line .top-menu,
   .page-1 .top-line .top-menu,
-  .page-about .top-line .top-menu {
+  .page-about .top-line .top-menu,
+  .error404 .top-line .top-menu,
+  .page-create-account .top-line .top-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -2073,7 +2705,9 @@
   .page-how-works-business .top-line .top-menu li,
   .page-how-works-student .top-line .top-menu li,
   .page-1 .top-line .top-menu li,
-  .page-about .top-line .top-menu li {
+  .page-about .top-line .top-menu li,
+  .error404 .top-line .top-menu li,
+  .page-create-account .top-line .top-menu li {
     margin-right: 0 !important;
     display: block;
     margin-left: 0 !important;
@@ -2082,7 +2716,9 @@
   .page-how-works-business .top-line .content-width .logo,
   .page-how-works-student .top-line .content-width .logo,
   .page-1 .top-line .content-width .logo,
-  .page-about .top-line .content-width .logo {
+  .page-about .top-line .content-width .logo,
+  .error404 .top-line .content-width .logo,
+  .page-create-account .top-line .content-width .logo {
     -webkit-box-ordinal-group: 1 !important;
         -ms-flex-order: 0 !important;
             order: 0 !important;
@@ -2091,7 +2727,9 @@
   .page-how-works-business .top-line .content-width .btn-wrap,
   .page-how-works-student .top-line .content-width .btn-wrap,
   .page-1 .top-line .content-width .btn-wrap,
-  .page-about .top-line .content-width .btn-wrap {
+  .page-about .top-line .content-width .btn-wrap,
+  .error404 .top-line .content-width .btn-wrap,
+  .page-create-account .top-line .content-width .btn-wrap {
     margin-left: auto;
     -webkit-box-ordinal-group: 1 !important;
         -ms-flex-order: 0 !important;
@@ -2102,7 +2740,9 @@
   .page-how-works-business .top-line .content-width .btn-wrap .btn-default,
   .page-how-works-student .top-line .content-width .btn-wrap .btn-default,
   .page-1 .top-line .content-width .btn-wrap .btn-default,
-  .page-about .top-line .content-width .btn-wrap .btn-default {
+  .page-about .top-line .content-width .btn-wrap .btn-default,
+  .error404 .top-line .content-width .btn-wrap .btn-default,
+  .page-create-account .top-line .content-width .btn-wrap .btn-default {
     font-size: 12px;
     line-height: 30px;
     padding: 0 10px;
@@ -2509,6 +3149,117 @@
   .page-about .dots .dots-wrap {
     padding: 102px 0 200px;
   }
+
+  .page-create-account footer {
+    padding-top: 0;
+  }
+
+  .page-create-account footer .content-width .bottom {
+    margin-top: 27px;
+    padding-top: 27px;
+  }
+
+  .create-account-block {
+    padding: 22px 0 10px;
+    margin-bottom: 0;
+  }
+
+  .create-account-block .content-width > h1 {
+    font-size: 30px;
+    line-height: 33px;
+    margin-top: 15px;
+  }
+
+  .create-account-block .content-width > p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .create-account-block .content-inner {
+    display: block;
+  }
+
+  .create-account-block .card {
+    width: 94%;
+  }
+
+  .create-account-block .project-category-form {
+    margin: 31px 0 34px;
+    padding: 16px 20px 45px;
+  }
+
+  .create-account-block .project-category-form h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .create-account-block .project-category-form p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 14px;
+  }
+
+  .create-account-block .project-category-form__item {
+    margin: 0 auto 21px;
+  }
+
+  .create-account-block .project-category-form__item label {
+    font-size: 13px;
+  }
+
+  .create-account-block .project-category-form__item .big-btn-default {
+    padding: 0 48px 0px 30px;
+  }
+
+  .create-account-block .bottom {
+    margin: 34px 0 1px;
+  }
+
+  .create-account-block .bottom h5 {
+    margin-bottom: 13px;
+  }
+
+  .create-account-block .bottom ul {
+    display: block;
+    margin: 0 auto;
+    max-width: 465px;
+  }
+
+  .card {
+    margin: 0 auto 37px;
+  }
+
+  .card .card-inner:before {
+    display: none;
+  }
+
+  .card .card-inner {
+    text-align: center;
+  }
+
+  .card_1 .card-inner:after {
+    display: none;
+  }
+
+  .card_2 .card-inner:after {
+    display: none;
+  }
+
+  .card-inner {
+    padding: 30px 15px;
+  }
+
+  .card-inner .big-btn-default {
+    margin: 0 auto;
+    padding: 0 48px 0px 30px;
+  }
+
+  .select {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2527,6 +3278,14 @@
   }
 }
 
+@media (max-width: 575px) {
+  .create-account-block .bottom ul li {
+    display: block;
+    margin-right: 0;
+    margin-left: 13%;
+  }
+}
+
 @media (max-width: 568px) {
   .burger-wrap {
     margin-left: 7px;
@@ -2535,14 +3294,18 @@
   .page-how-works-business .top-line,
   .page-how-works-student .top-line,
   .page-1 .top-line,
-  .page-about .top-line {
+  .page-about .top-line,
+  .error404 .top-line,
+  .page-create-account .top-line {
     padding: 10px 31px;
   }
 
   .page-how-works-business .top-line .content-width .btn-wrap,
   .page-how-works-student .top-line .content-width .btn-wrap,
   .page-1 .top-line .content-width .btn-wrap,
-  .page-about .top-line .content-width .btn-wrap {
+  .page-about .top-line .content-width .btn-wrap,
+  .error404 .top-line .content-width .btn-wrap,
+  .page-create-account .top-line .content-width .btn-wrap {
     width: 115px;
   }
 
@@ -2832,14 +3595,18 @@
   .page-how-works-business .top-line,
   .page-how-works-student .top-line,
   .page-1 .top-line,
-  .page-about .top-line {
+  .page-about .top-line,
+  .error404 .top-line,
+  .page-create-account .top-line {
     padding: 10px 0;
   }
 
   .page-how-works-business .top-line .content-width .logo,
   .page-how-works-student .top-line .content-width .logo,
   .page-1 .top-line .content-width .logo,
-  .page-about .top-line .content-width .logo {
+  .page-about .top-line .content-width .logo,
+  .error404 .top-line .content-width .logo,
+  .page-create-account .top-line .content-width .logo {
     width: 100px;
   }
 }
