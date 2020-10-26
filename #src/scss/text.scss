@@ -1,0 +1,131 @@
+.text-content {
+	font-family: 'Merriweather',sans-serif;
+	margin: 2.5em 0 3.75em;
+	font-size: 16px;
+
+	@media (max-width: $md3+px) {
+		font-size: 12px;
+	}
+
+	& h1 {
+		text-align: center;
+	}
+
+	& h2 {
+		font-size: 1.7em !important;
+		margin: .67em 0 .47em !important;
+		line-height: normal !important;
+		display: flex;
+		& > span {
+			flex: 0 0 1.838em;
+			display: inline-block;
+		}
+	}
+
+	& h3 {
+		font-size: 1.4em;
+		line-height: normal !important;
+		margin: .67em 0 .47em !important;
+	}
+	& h4 {
+		font-size: 1.1em;
+		line-height: normal !important;
+		margin: .67em 0 .47em !important;
+	}
+	& h5 {
+		font-size: 0.9em;
+		line-height: normal !important;
+		margin: .67em 0 .47em !important;
+	}
+	& h6 {
+		font-size: 0.6em;
+		line-height: normal !important;
+		margin: .67em 0 .47em !important;
+	}
+
+	& p {
+		margin-bottom: 1em;
+		line-height: 1.7em;
+	}
+
+	& a {
+		color: #2dac79;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	& .main-list { 
+		& > li {
+			margin-bottom: 2em;
+			& > ol {
+				padding: 0;
+
+				& > li {
+					position: relative;
+					padding-left: 3.2em;
+
+					& > span {
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+
+					& > ol {
+						padding: 0;
+
+						& > li {
+							position: relative;
+							padding-left: 2.6em;
+
+							& > span {
+								position: absolute;
+								top: 0;
+								left: 0;
+							}
+						}
+					}
+
+					& > ul {
+						& > li {
+							padding-left: 2.6em;
+							position: relative;
+
+							&:before {
+								position: absolute;
+								content: '';
+								top: 0.5em;
+								left: 1em;
+								width: 6px;
+								height: 6px;
+								border-radius: 50%;
+								background: #081f25
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	& nav {
+		& h3 {
+			padding-left: 2.3em;
+		}
+		& > ul {
+			& > li {
+				padding-left: 3.2em;
+
+			}
+
+			& h5 {
+				& > a {
+					display: flex;
+					& > span {
+						flex: 0 0 2em;
+					}
+				}
+			}
+		}
+	}
+}

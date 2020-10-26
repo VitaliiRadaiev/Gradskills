@@ -224,9 +224,38 @@ body {
 .error404 .top-line .top-menu,
 .page-create-account .top-line .top-menu {
   text-align: right;
-  margin: 0 13px 0 auto;
+  margin: 0 13px 0 33px;
   -webkit-box-shadow: 0 18px 21px -23px #b2b2b2;
           box-shadow: 0 18px 21px -23px #b2b2b2;
+  padding-left: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: auto;
+}
+
+.page-how-works-business .top-line .top-menu ul,
+.page-how-works-student .top-line .top-menu ul,
+.page-1 .top-line .top-menu ul,
+.page-about .top-line .top-menu ul,
+.error404 .top-line .top-menu ul,
+.page-create-account .top-line .top-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.page-how-works-business .top-line .top-menu li.left,
+.page-how-works-student .top-line .top-menu li.left,
+.page-1 .top-line .top-menu li.left,
+.page-about .top-line .top-menu li.left,
+.error404 .top-line .top-menu li.left,
+.page-create-account .top-line .top-menu li.left {
+  margin-right: auto !important;
 }
 
 .page-how-works-business .top-line .top-menu li:not(:last-child),
@@ -2443,22 +2472,144 @@ body {
   padding-left: 20px;
 }
 
-@media (min-width: 767.98px) {
-  .page-how-works-business .top-line .top-menu,
-  .page-how-works-student .top-line .top-menu,
-  .page-1 .top-line .top-menu,
-  .page-about .top-line .top-menu,
-  .error404 .top-line .top-menu,
-  .page-create-account .top-line .top-menu {
-    display: block !important;
-  }
+.mkb-root p {
+  margin: 1em 0;
+}
+
+.text-content {
+  font-family: 'Merriweather',sans-serif;
+  margin: 2.5em 0 3.75em;
+  font-size: 16px;
+}
+
+.text-content h1 {
+  text-align: center;
+}
+
+.text-content h2 {
+  font-size: 1.7em !important;
+  margin: .67em 0 .47em !important;
+  line-height: normal !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-content h2 > span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.838em;
+          flex: 0 0 1.838em;
+  display: inline-block;
+}
+
+.text-content h3 {
+  font-size: 1.4em;
+  line-height: normal !important;
+  margin: .67em 0 .47em !important;
+}
+
+.text-content h4 {
+  font-size: 1.1em;
+  line-height: normal !important;
+  margin: .67em 0 .47em !important;
+}
+
+.text-content h5 {
+  font-size: 0.9em;
+  line-height: normal !important;
+  margin: .67em 0 .47em !important;
+}
+
+.text-content h6 {
+  font-size: 0.6em;
+  line-height: normal !important;
+  margin: .67em 0 .47em !important;
+}
+
+.text-content p {
+  margin-bottom: 1em;
+  line-height: 1.7em;
+}
+
+.text-content a {
+  color: #2dac79;
+}
+
+.text-content a:hover {
+  text-decoration: underline;
+}
+
+.text-content .main-list > li {
+  margin-bottom: 2em;
+}
+
+.text-content .main-list > li > ol {
+  padding: 0;
+}
+
+.text-content .main-list > li > ol > li {
+  position: relative;
+  padding-left: 3.2em;
+}
+
+.text-content .main-list > li > ol > li > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-content .main-list > li > ol > li > ol {
+  padding: 0;
+}
+
+.text-content .main-list > li > ol > li > ol > li {
+  position: relative;
+  padding-left: 2.6em;
+}
+
+.text-content .main-list > li > ol > li > ol > li > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-content .main-list > li > ol > li > ul > li {
+  padding-left: 2.6em;
+  position: relative;
+}
+
+.text-content .main-list > li > ol > li > ul > li:before {
+  position: absolute;
+  content: '';
+  top: 0.5em;
+  left: 1em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #081f25;
+}
+
+.text-content nav h3 {
+  padding-left: 2.3em;
+}
+
+.text-content nav > ul > li {
+  padding-left: 3.2em;
+}
+
+.text-content nav > ul h5 > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-content nav > ul h5 > a > span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2em;
+          flex: 0 0 2em;
 }
 
 @media (min-width: 768px) {
-  .top-line-burger {
-    display: none;
-  }
-
   .page-how-works-business .finding-internships .content .item .accordion-item.is-active .plus {
     top: 40px;
     right: 35px;
@@ -2502,6 +2653,17 @@ body {
   }
 }
 
+@media (min-width: 991.98px) {
+  .page-how-works-business .top-line .top-menu,
+  .page-how-works-student .top-line .top-menu,
+  .page-1 .top-line .top-menu,
+  .page-about .top-line .top-menu,
+  .error404 .top-line .top-menu,
+  .page-create-account .top-line .top-menu {
+    display: block !important;
+  }
+}
+
 @media (min-width: 992px) {
   .page-how-works-business .top-line .top-menu a:hover,
   .page-how-works-student .top-line .top-menu a:hover,
@@ -2510,6 +2672,10 @@ body {
   .error404 .top-line .top-menu a:hover,
   .page-create-account .top-line .top-menu a:hover {
     color: #31b781;
+  }
+
+  .top-line-burger {
+    display: none;
   }
 
   .page-how-works-business header .content .bottom-btn.active > a:hover {
@@ -2600,6 +2766,87 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .page-how-works-business .top-line,
+  .page-how-works-student .top-line,
+  .page-1 .top-line,
+  .page-about .top-line,
+  .error404 .top-line,
+  .page-create-account .top-line {
+    overflow: visible;
+  }
+
+  .page-how-works-business .top-line .top-menu,
+  .page-how-works-student .top-line .top-menu,
+  .page-1 .top-line .top-menu,
+  .page-about .top-line .top-menu,
+  .error404 .top-line .top-menu,
+  .page-create-account .top-line .top-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 30px 0;
+    display: none;
+    margin: 0;
+  }
+
+  .page-how-works-business .top-line .top-menu ul,
+  .page-how-works-student .top-line .top-menu ul,
+  .page-1 .top-line .top-menu ul,
+  .page-about .top-line .top-menu ul,
+  .error404 .top-line .top-menu ul,
+  .page-create-account .top-line .top-menu ul {
+    display: block;
+  }
+
+  .page-how-works-business .top-line .top-menu li,
+  .page-how-works-student .top-line .top-menu li,
+  .page-1 .top-line .top-menu li,
+  .page-about .top-line .top-menu li,
+  .error404 .top-line .top-menu li,
+  .page-create-account .top-line .top-menu li {
+    margin-right: 0 !important;
+    display: block;
+    margin-left: 0 !important;
+  }
+
+  .page-how-works-business .top-line .content-width .logo,
+  .page-how-works-student .top-line .content-width .logo,
+  .page-1 .top-line .content-width .logo,
+  .page-about .top-line .content-width .logo,
+  .error404 .top-line .content-width .logo,
+  .page-create-account .top-line .content-width .logo {
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+  }
+
+  .page-how-works-business .top-line .content-width .btn-wrap,
+  .page-how-works-student .top-line .content-width .btn-wrap,
+  .page-1 .top-line .content-width .btn-wrap,
+  .page-about .top-line .content-width .btn-wrap,
+  .error404 .top-line .content-width .btn-wrap,
+  .page-create-account .top-line .content-width .btn-wrap {
+    margin-left: auto;
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+    width: 125px;
+  }
+
+  .page-how-works-business .top-line .content-width .btn-wrap .btn-default,
+  .page-how-works-student .top-line .content-width .btn-wrap .btn-default,
+  .page-1 .top-line .content-width .btn-wrap .btn-default,
+  .page-about .top-line .content-width .btn-wrap .btn-default,
+  .error404 .top-line .content-width .btn-wrap .btn-default,
+  .page-create-account .top-line .content-width .btn-wrap .btn-default {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px;
+  }
+
   .page-how-works-business .finding-internships .content .item-4 figure {
     right: 0;
   }
@@ -2677,77 +2924,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .page-how-works-business .top-line,
-  .page-how-works-student .top-line,
-  .page-1 .top-line,
-  .page-about .top-line,
-  .error404 .top-line,
-  .page-create-account .top-line {
-    overflow: visible;
-  }
-
-  .page-how-works-business .top-line .top-menu,
-  .page-how-works-student .top-line .top-menu,
-  .page-1 .top-line .top-menu,
-  .page-about .top-line .top-menu,
-  .error404 .top-line .top-menu,
-  .page-create-account .top-line .top-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    text-align: center;
-    padding: 30px 0;
-    display: none;
-  }
-
-  .page-how-works-business .top-line .top-menu li,
-  .page-how-works-student .top-line .top-menu li,
-  .page-1 .top-line .top-menu li,
-  .page-about .top-line .top-menu li,
-  .error404 .top-line .top-menu li,
-  .page-create-account .top-line .top-menu li {
-    margin-right: 0 !important;
-    display: block;
-    margin-left: 0 !important;
-  }
-
-  .page-how-works-business .top-line .content-width .logo,
-  .page-how-works-student .top-line .content-width .logo,
-  .page-1 .top-line .content-width .logo,
-  .page-about .top-line .content-width .logo,
-  .error404 .top-line .content-width .logo,
-  .page-create-account .top-line .content-width .logo {
-    -webkit-box-ordinal-group: 1 !important;
-        -ms-flex-order: 0 !important;
-            order: 0 !important;
-  }
-
-  .page-how-works-business .top-line .content-width .btn-wrap,
-  .page-how-works-student .top-line .content-width .btn-wrap,
-  .page-1 .top-line .content-width .btn-wrap,
-  .page-about .top-line .content-width .btn-wrap,
-  .error404 .top-line .content-width .btn-wrap,
-  .page-create-account .top-line .content-width .btn-wrap {
-    margin-left: auto;
-    -webkit-box-ordinal-group: 1 !important;
-        -ms-flex-order: 0 !important;
-            order: 0 !important;
-    width: 125px;
-  }
-
-  .page-how-works-business .top-line .content-width .btn-wrap .btn-default,
-  .page-how-works-student .top-line .content-width .btn-wrap .btn-default,
-  .page-1 .top-line .content-width .btn-wrap .btn-default,
-  .page-about .top-line .content-width .btn-wrap .btn-default,
-  .error404 .top-line .content-width .btn-wrap .btn-default,
-  .page-create-account .top-line .content-width .btn-wrap .btn-default {
-    font-size: 12px;
-    line-height: 30px;
-    padding: 0 10px;
-  }
-
   .page-how-works-business .finding-internships .content .item {
     margin-bottom: 50px;
   }
@@ -3259,6 +3435,10 @@ body {
 
   .select {
     width: 100%;
+  }
+
+  .text-content {
+    font-size: 12px;
   }
 }
 
