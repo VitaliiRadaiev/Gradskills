@@ -9647,6 +9647,10 @@ jQuery(document).ready(function ($) {
           })
           $contentItem.classList.add('_events-click');
         }
+
+        if(postsContainer.children.length <= 4) {
+          btn.style.display = 'none';
+        }
       })
     }
   }
