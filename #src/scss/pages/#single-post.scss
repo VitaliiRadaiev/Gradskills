@@ -1,0 +1,217 @@
+.post-article  {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 50px;
+        margin-top: 15px;
+    }
+
+    &__head {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba($textColor, 0.6);
+
+        @media (min-width: 992px) {
+            width: 70%;
+        }
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__title {
+        font-size: 54px;
+        margin-bottom: 15px;
+        font-family: $titleFont;
+        font-weight: 700;
+        line-height: 1em;
+        margin-top: 0;
+        color: $mainColor;
+
+        @media (max-width: $md2+px) {
+            font-size: 38px;
+        }
+    }
+
+    &__author-date {
+        font-size: 18px;
+        line-height: 1.125em;
+        font-weight: 700;
+        color: $textColor;
+        & > strong {
+            color: $titleColor;
+        }
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+        }
+    }
+
+    &__body {
+        display: flex;
+
+        @media (max-width: $md2+px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__column-1 {
+        flex: 0 0 70%;
+
+        &.text-content {
+            margin: 0;
+
+            & ul {
+                & > li {
+                    position: relative;
+                    padding-left: 2.5em;
+
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        top: 0.625em;
+                        left: 1.5625em;
+                        height: 5px;
+                        width: 5px;
+                        border-radius: 50%;
+                        background-color: $mainColor;
+                    }
+                }
+            }
+
+            & ol {
+                padding-left: 2.5em;
+            }
+        }
+    }
+
+    &__column-2 {
+        flex: 1 1 auto;
+        @media (min-width: 992px) {
+            padding: 0 20px;
+        }
+        text-align: center;
+        & .social {
+            margin: 0 auto 40px;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+
+
+.social {
+    display: inline-block;
+    min-width: 263px;
+    border-radius: 8px;
+    background-color: #f2f7f2;
+    text-align: center;
+    padding: 20px;
+
+    &__label {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+        color: $titleColor;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        & li {
+            margin: 4px;
+        }
+
+        & a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease;
+            position: relative;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            overflow: hidden;
+
+            @media (min-width: 992px) {
+                &:hover {
+                    &:after {
+                        transform: scale(1);
+                    }
+
+                    & img {
+                        filter: invert(1);
+                    }
+                }
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                border-radius: 50%;
+                background-color: #000;
+                transform: scale(0);
+                transition: all .3s ease;
+                display: block;
+            }
+
+            & img {
+                position: relative;
+                z-index: 2;
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+
+
+
+.text-gallery {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-auto-flow: dense;
+    gap: 10px;
+
+    &__item {
+        position: relative;
+        height: 0;
+        padding-bottom: 60%;
+        border-radius: 8px;
+        overflow: hidden;
+
+        &:nth-child(4n){
+
+             @media (min-width: 480px) {
+                grid-column: span 2;
+                grid-row: span 2;
+   
+             }
+        }
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

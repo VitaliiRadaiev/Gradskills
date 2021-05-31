@@ -197,23 +197,6 @@ html,body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .page-how-works-business {
 
 	& .finding-internships {
@@ -2809,12 +2792,19 @@ footer {
 
 	& .about {
 		padding: 104px 0 50px;
+		margin-bottom: 135px;
 
 		@media (max-width: $md3+px) {
-			padding: 15px 0 0px;
+			padding: 40px 0 0px;
 		}
 
-		margin-bottom: 135px;
+		& .content-width {
+			max-width: 918px;
+			@media (min-width: 768px) {
+				margin-left: 25px;
+			}
+		}
+
 		& .colour {
 			color: #31b781;
 		}
@@ -3521,6 +3511,16 @@ footer {
 }
 //</SELECT>====================================================================================================
 
+
+//==<footer>====================================================================================================
+footer .content-width .bottom .link-wrap a {
+	margin: 0 4px
+}
+//==</footer>====================================================================================================
+
+
+
+
 .mkb-root {
 	& p {
 		margin: 1em 0;
@@ -3529,3 +3529,6 @@ footer {
 
 
 @import "text"; 
+@import "pages/#blog";
+@import "pages/#single-post";
+

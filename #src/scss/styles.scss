@@ -896,6 +896,11 @@ footer{
           font-weight: 400;
           line-height: normal;
           vertical-align: top;
+          
+          @media (max-width: $md3+px) {
+            margin: 0 4px;
+          }
+
           &:hover{
             color: #fff;
             border-bottom: 1px solid #fff;

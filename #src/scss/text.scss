@@ -2,6 +2,7 @@
 	font-family: 'Merriweather',sans-serif;
 	margin: 2.5em 0 3.75em;
 	font-size: 16px;
+	line-height: 1.7em;
 
 	@media (max-width: $md3+px) {
 		font-size: 12px;
@@ -47,6 +48,17 @@
 		margin-bottom: 1em;
 		line-height: 1.7em;
 	}
+
+	 & q {
+		margin-bottom: 1em;
+		display: block;
+		font-size: 1.125em;
+		font-weight: 700;
+		padding: 1.25em;
+		border-radius: 8px;
+		background-color: #2eac79;
+		color: #fff;
+	 }
 
 	& a {
 		color: #2dac79;
@@ -126,6 +138,29 @@
 					}
 				}
 			}
+		}
+	}
+
+	& figure {
+		margin-bottom: 1.5625em;
+		border-radius: 8px;
+		overflow: hidden;
+		& img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	& iframe {
+		width: 100%;
+		height: 400px;
+		margin-bottom: 1.5625em;
+		border-radius: 8px;
+		overflow: hidden;
+
+		@media (max-width: $md3+px) {
+			height: 300px;
 		}
 	}
 }
